@@ -1,8 +1,38 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "LGH Estetica avanzada";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="content contentmobilmain">
+        <div class="loggamainpage">
+            <img src="~/images/loggaliz.png" class="loggamain" alt="Logga LGH" />
+        </div>
+        <div class="imgfondo">
+            <img src="~/images/fondoflores768px.png" class="imgfondmain" alt="Alternate Text" />
+        </div>
+        <div class="textfirtsmain">
+            <h1>Medicina Estetica</h1>
+            <h1>Aestetic Medicin</h1>
+        </div>
+        <div class="treatmentsmain">
+            <div class="facialmain">
+                <h6>Tratamientos Faciales</h6>
+                <img src="~/images/Aplicacion-dermapen-Recuperado.png" class="facialimgmain" alt="Alternate Text" />
+            </div>
+            <div class="corporalmain">
+                <h6>Tratamientos Corporales</h6>
+                <img src="~/images/cav.jpg" class="corpimgmain" alt="Alternate Text" />
+            </div>
+        </div>
+        <div class="textmain">
+            <h4>Y Mas Tratamientos bienvenido</h4>
+            <h4>And more treatments welcome</h4>
+        </div>
+        <div class="homepagebuttons">
+            <a class="btn-theme-h" asp-controller="Spanish" asp-action="index">Para Español</a>
+            <a class="btn-theme-h" asp-controller="English" asp-action="index">For English</a>
+            <a class="btn-theme-h" asp-controller="Swedish" asp-action="index">För Svenska</a>
+        </div>
+    </div>
+   
 </div>

@@ -1,0 +1,40 @@
+﻿@media (max-width: 768px) {
+    header,
+    footer {
+        display: none;
+        border:none;
+    }
+}
+@media (min-width: 768px) {
+    .contentmobilmain {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .contentmobilhome {
+        display: none;
+    }
+}
+    @mixin md {
+        @media(min-width: 768px) {
+            @content;
+        }
+    }
+
+    @mixin lg {
+        @media(min-width: 992px) {
+            @content
+        }
+    }
+
+    @mixin xl {
+        @media(min-width: 1200px) {
+            @content
+        }
+    }
+
+    @mixin xxl {
+        @media(min-width: 1400px) {
+            @content
+        }
+    }

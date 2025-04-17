@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "LGH Estetica avanzada";
+}
+<div class="container">
+    <div class="content contentmobilhome">
+        <div class="loggamainhome">
+            <img src="~/images/loggaliz.png" class="loggahome" alt="Logga LGH" />
+        </div>
+        <a class="menubar" onclick="toggleDropdown()">
+            <i id="menuIcon" class="fa-solid fa-bars"></i>
+        </a>
+
+        <div class="dropdown-content" id="dropdownMenu">
+            <a asp-controller="English" asp-action="Index">Home</a>
+            <a asp-controller="BodyEng" asp-action="Index">Body Treatments</a>
+            <a asp-controller="FacialEng" asp-action="Index">Facial Treatments</a>
+        </div>
+        <div class="imgfondohomebody">
+            <img src="~/images/fondomain.png" class="imgfondbody" alt="Alternate Text" />
+        </div>
+        <div class="textbodytitle">
+            <h1>Aestetic Medicin</h1>
+        </div>
+        <div class="textfacialsecondtext">
+            <h3>Facial Treatments</h3>
+        </div>
+        <div class="boxesen1">
+            <div class="box1">
+                <img src="~/images/dermapen.jpeg" width="110px" height="70px" class="imgderm" alt="Alternate Text" />
+            </div>
+            <div class="box2">
+                <img src="~/images/Microdermoabr.jpeg" width="110px" height="70px" class="imgmicro" alt="Alternate Text" />
+            </div>
+            <div class="box3">
+                <img src="~/images/Radiocila.jpg" width="110px" height="70px" class="imgderm" alt="Alternate Text" />
+            </div>
+            </div>
+            <div class="boxesen2">
+            <div class="box4">
+                <img src="~/images/cavitation.jpeg" width="50px" height="30px" class="imgcavmini" alt="Alternate Text" />
+                <img src="~/images/radiofrecorp.jpeg" width="50px" height="30px" class="imgradiomini" alt="Alternate Text" />
+                <img src="~/images/preso.jpg" width="50px" height="30px" class="imgpresomini" alt="Alternate Text" />
+            </div>
+            </div>
+            <div class="boxesen3">
+            <div class="box5">
+                <img src="~/images/radiofrecorp.jpeg" width="110px" height="70px" class="imgradiocorp" alt="Alternate Text" />
+            </div>
+            <div class="box6">
+                <img src="~/images/cavitation.jpeg" width="110px" height="70px" class="imgdcavit" alt="Alternate Text" />
+            </div>
+            <div class="box7">
+                <img src="~/images/preso.jpg" width="110px" height="70px" class="imgpresoterapia" alt="Alternate Text" />
+            </div>
+        </div>
+        <div class="textbodysecondtext">
+            <h3>Tratamientos Corporales</h3>
+        </div>
+    </div>
+</div>

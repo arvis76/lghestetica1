@@ -1,0 +1,245 @@
+﻿.loggamainhome {
+    position: absolute;
+    top: 0%;
+    left: 35%;
+
+    .loggahome {
+        width: 50%;
+    }
+
+}
+.loggamainpages {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    gap:20px;
+
+    .loggahomepages {
+        width: 55%;
+    }
+
+   
+}
+.textbodytitle{
+    position:absolute;
+    top:20%;
+    margin:10%;
+}
+.textbodytitlesp {
+    position: absolute;
+    top: 23%;
+    margin: 5%;
+}
+.boxessp1 {
+    position: absolute;
+    top: 50%;
+    width: 85%;
+    gap: 20px;
+    height: 80px;
+
+
+    .box1 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+
+    .box2 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+
+    .box3 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+}
+.boxessp2 {
+    position: absolute;
+    top: 90%;
+    height: 80px;
+    width:100%;
+
+    .box4 {
+        display: flex;
+        background-color: aquamarine;
+        height: 90px;
+        width:80%;
+
+        .imgbox1 {
+            display: grid;
+        }
+
+        .imgbox2 {
+            display: grid;
+        }
+
+        .imgbox3 {
+            display: grid;
+        }
+    }
+}
+
+.boxessp3 {
+    position: absolute;
+    bottom: -20%;
+    width: 85%;
+    gap: 20px;
+    height: 80px;
+
+    .box5 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+
+    .box6 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+
+    .box7 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+}
+
+    .boxessv1 {
+        position: absolute;
+        top: 30px;
+    }
+
+    .boxessv2 {
+        position: absolute;
+        top: 40px;
+    }
+
+.boxessv3 {
+    position: absolute;
+    top: 50px;
+
+    .box5 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+
+    .box6 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+
+    .box7 {
+        display: flex;
+        background-color: aqua;
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px;
+        height: 100px;
+    }
+}
+
+    .boxesen1 {
+        position: absolute;
+        top: 30px;
+    }
+
+    .boxesen2 {
+        position: absolute;
+        top: 40px;
+    }
+
+    .boxesen3 {
+        position: absolute;
+        top: 50px;
+    }
+
+    .textfacialsecondtext {
+        margin: 10%;
+        position: absolute;
+        top: 35%;
+    }
+
+    .textbodysecondtext {
+        margin: 8%;
+        position: absolute;
+        top: 70%;
+    }
+
+    .textbodysecondtexten {
+        margin: 20%;
+        position: absolute;
+        top: 18%;
+    }
+
+    .imgfondhome {
+        width: 100%;
+    }
+
+    .menubar {
+        position: absolute;
+        top: 2%;
+        font-size: 80px;
+        cursor: pointer;
+        padding: 15px;
+        color: black; /* or white depending on your background */
+        text-decoration: none;
+    }
+
+    .dropdown-content {
+        width: 50%;
+        display: none;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: green;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .texthome {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
