@@ -12,7 +12,9 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\Shared\Sections\" />
+    <Folder Include="Views\Shared\Sections\SectionEnglish\" />
+    <Folder Include="Views\Shared\Sections\SectionSpanish\" />
+    <Folder Include="Views\Shared\Sections\SectionsSweden\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 

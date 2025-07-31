@@ -1,0 +1,40 @@
+﻿@{
+	ViewData["Lang"] = "Spanish"; // or "Spanish" or "English"
+}
+<header>
+	<div class="language-choise">
+		<a asp-controller="Swedish" asp-action="index"><img src="~/images/swedishm.png" class="flagsswed" alt="Swedish" /></a>
+		<a asp-controller="English" asp-action="index"><img src="~/images/english.png" class="flagseng" alt="English" /></a>
+	</div>
+	<div class="loggamainhomepc">
+		<img src="~/images/loggaliz.png" class="loggahome" alt="Logga LGH" />
+		<div class="maintextpc">
+			<h1>Medicina Estetica</h1>
+		</div>
+	</div>
+	<div class="headbackgroundimagepc">
+		<img src="~/images/fondo_con_floresPC 1.svg" class="loggahomepc" alt="Logga LGH" />
+	</div>
+	<div class="horizontal-menu">
+		<a asp-controller="Spanish" asp-action="Index">Home</a>
+		<div class="dropdown2">
+			<a href="#">Tratamientos Faciales</a>
+			<div class="dropdown-content2">
+				<a asp-controller="TratamientosFaciales" asp-action="MicrodermoabrasionFacial">Microdermabrasion Facial</a>
+				<a asp-controller="TratamientosFaciales" asp-action="DermapenFacial">Dermapen</a>
+				<a asp-controller="TratamientosFaciales" asp-action="RadiofrecuenciaFacial">Radiofrequencia Facial</a>
+			</div>
+		</div>
+		<div class="dropdown2">
+			<a href="#">Tratamientos Corporales</a>
+			<div class="dropdown-content2">
+				<a asp-controller="TratamientosCorporales" asp-action="Cavitacion">Cavitacion</a>
+				<a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal">Radiofrecuencia Corporal</a>
+				<a asp-controller="TratamientosCorporales" asp-action="Presoterapia">Presoterapia</a>
+				<a asp-controller="TratamientosCorporales" asp-action="Anticelulitis">Anticelulitis</a>
+			</div>
+		</div>
+		<a asp-controller="Spanish" asp-action="Contact">Contact us</a>
+		<a asp-controller="Spanish" asp-action="Pricos">Prices</a>
+	</div>
+</header>

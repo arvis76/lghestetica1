@@ -1,10 +1,29 @@
 ﻿@media (max-width: 768px) {
-    header,
-    footer {
+    header  {
         display: none;
-        border:none;
+    }
+    .homepageall {
+        
+        footer {
+            display: none;
+        }
+    }
+    
+    .mainpagepc {
+        display: none;
+        
+    }
+    .loggahomepages {
+        width: 60%;
+    }
+
+    .contentpc{
+        display:none;
     }
 }
+
+
+
 @media (min-width: 768px) {
     .contentmobilmain {
         display: none;
@@ -15,26 +34,34 @@
         display: none;
     }
 }
-    @mixin md {
-        @media(min-width: 768px) {
-            @content;
-        }
+@mixin md {
+    @media(min-width: 768px) {
+        @content;
     }
 
-    @mixin lg {
-        @media(min-width: 992px) {
-            @content
-        }
+    border: none;
+}
+
+@mixin lg {
+    @media(min-width: 992px) {
+        @content
     }
 
-    @mixin xl {
-        @media(min-width: 1200px) {
-            @content
-        }
+    border: none;
+}
+
+@mixin xl {
+    @media(min-width: 1200px) {
+        @content
     }
 
-    @mixin xxl {
-        @media(min-width: 1400px) {
-            @content
-        }
+    border: none;
+}
+
+@mixin xxl {
+    @media(min-width: 1400px) {
+        @content
     }
+
+    border: none;
+}

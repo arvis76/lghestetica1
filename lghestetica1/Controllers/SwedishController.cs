@@ -1,12 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using System.Net.Mail;
 
-namespace lghestetica1.Controllers
+namespace lghestetica1.Controllers;
+
+public class SwedishController : Controller
 {
-	public class SwedishController : Controller
+	public IActionResult Index()
 	{
-		public IActionResult Index()
-		{
-			return View();
-		}
+		return View();
 	}
+	public IActionResult Priser()
+	{
+		return View();
+	}
+	
+	public IActionResult Kontakta()
+	{
+		return View();
+	}
+	
 }
+

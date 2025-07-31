@@ -1,61 +1,182 @@
 ﻿@{
     ViewData["Title"] = "LGH Estetica avanzada";
 }
-<div class="container">
-    <div class="container">
-        <div class="content contentmobilhome">
-            <div class="loggamainhome">
-                <img src="~/images/loggaliz.png" class="loggahome" alt="Logga LGH" />
-            </div>
-            <a class="menubar" onclick="toggleDropdown()">
-                <i id="menuIcon" class="fa-solid fa-bars"></i>
-            </a>
 
-            <div class="dropdown-content" id="dropdownMenu">
-                <a asp-controller="Swedish" asp-action="Index">Home</a>
-                <a asp-controller="BodySwe" asp-action="Index">Body Treatments</a>
-                <a asp-controller="FacialSwe" asp-action="Index">Facial Treatments</a>
+    <div class="content contentmobilhome">
+    @await Html.PartialAsync("_HeaderSwedishMobile")
+    <div class="mainmainbox">
+        <div class="textbodytitlesp">
+            <h1>Estetisk Medicin</h1>
+        </div>
+        <div class="mainbox">
+        <div class="boxessp1">
+            <div class="textfacialsecondtext">
+                <h4>Ansikts Behandlingar</h4>
             </div>
-            <div class="imgfondohomebody">
-                <img src="~/images/fondomain.png" class="imgfondbody" alt="Alternate Text" />
+            <div class="box1sv">
+                <img src="~/images/dermapen.jpeg" width="100px" height="100px" class="imgderm" alt="Alternate Text" />
+                <div class="dermspain">
+                    <h6>Microneedling</h6>
+                    <p>Microneedling-behandling som förbättrar hudens struktur, minskar ärr, pigmentfläckar och ger lyster</p>
+                </div>
+                    <button class="btn-theme-home"><a asp-controller="AnsiktsBehandlingar" asp-action="Microneedling" class="btn-home-page">Vill du veta mer...</a></button>
             </div>
-            <div class="texthome">
-                <h1>Estetisk Medicin</h1>
+            <div class="box2sv">
+
+                <div class="dermspain">
+                <img src="~/images/Microdermoabr.jpeg" width="100px" height="100px" class="imgmicro" alt="Alternate Text" />
+                    <h6>Micro</h6>
+                    <p>dermapen es muy bueno</p>
+                </div>
+                <button class="btn-theme-home">Vill du veta mer...</button>
+                
             </div>
-            <div class="facialhome">
-                <h1>Ansikts behandlingar</h1>
-            </div>
-            <div class="boxessv1">
-                <div class="box1">
-                    <img src="~/images/dermapen.jpeg" width="110px" height="70px" class="imgderm" alt="Alternate Text" />
+            <div class="box3sv">
+            <img src="~/images/Radiocila.jpg" width="100px" height="100px" class="imgderm" alt="Alternate Text" />
+                <div class="dermspain">
+                    <h6>Dermapen</h6>
+                    <p>dermapen es muy bueno</p>
                 </div>
-                <div class="box2">
-                    <img src="~/images/Microdermoabr.jpeg" width="110px" height="70px" class="imgmicro" alt="Alternate Text" />
-                </div>
-                <div class="box3">
-                    <img src="~/images/Radiocila.jpg" width="110px" height="70px" class="imgderm" alt="Alternate Text" />
-                </div>
-            </div>
-            <div class="boxessv2">
-                <div class="box4">
-                    <img src="~/images/cavitation.jpeg" width="50px" height="30px" class="imgcavmini" alt="Alternate Text" />
-                    <img src="~/images/radiofrecorp.jpeg" width="50px" height="30px" class="imgradiomini" alt="Alternate Text" />
-                    <img src="~/images/preso.jpg" width="50px" height="30px" class="imgpresomini" alt="Alternate Text" />
-                </div>
-            </div>
-            <div class="boxessv3">
-                <div class="box5">
-                    <img src="~/images/radiofrecorp.jpeg" width="110px" height="70px" class="imgradiocorp" alt="Alternate Text" />
-                </div>
-                <div class="box6">
-                    <img src="~/images/cavitation.jpeg" width="110px" height="70px" class="imgdcavit" alt="Alternate Text" />
-                </div>
-                <div class="box7">
-                    <img src="~/images/preso.jpg" width="110px" height="70px" class="imgpresoterapia" alt="Alternate Text" />
-                </div>
-            </div>
-            <div class="textbodysecondtext">
-                <h3>Body treatments</h3>
+                <button class="btn-theme-home">Vill du veta mer...</button>
             </div>
         </div>
+        <div class="boxessp2">
+            <div class="textbodysecondtext">
+                <h3></h3>
+            </div>
+            <div class="box4">
+                <div class="imgbox1">
+                    <img src="~/images/cavitation.jpeg" width="50px" height="30px" class="imgcavmini" alt="Alternate Text" />
+                    <p>Dermapen </p>
+                </div>
+                <div class="imgbox2">
+                    <img src="~/images/radiofrecorp.jpeg" width="50px" height="30px" class="imgradiomini" alt="Alternate Text" />
+                    <p>Dermapen </p>
+                </div>
+                <div class="imgbox3">
+                    <img src="~/images/preso.jpg" width="50px" height="30px" class="imgpresomini" alt="Alternate Text" />
+                    <p>Dermapen </p>
+                </div>
+            </div>
+            <button class="btn-theme-home">Vill du veta mer...</button>
+        </div>
+        <div class="boxessp3">
+            <div class="box5sv">
+            <img src="~/images/radiofrecorp.jpeg" width="100px" height="100px"  class="imgradiocorp" alt="Alternate Text" />
+                <div class="dermspain">
+                    <h6>Dermapen</h6>
+                    <p>dermapen es muy bueno</p>
+                </div>
+                <button class="btn-theme-home">Vill du veta mer...</button>
+            </div>
+            <div class="box6sv">
+
+                <div class="dermspain">
+                <img src="~/images/cavitation.jpeg" width="100px" height="100px" class="imgdcavit" alt="Alternate Text" />
+                    <h6>Dermapen</h6>
+                    <p>dermapen es muy bueno</p>
+                </div>
+                <button class="btn-theme-home">Vill du veta mer...</button>
+                
+            </div>
+            <div class="box7sv">
+            <img src="~/images/preso.jpg" width="100px" height="100px"  class="imgpresoterapia" alt="Alternate Text" />
+                <div class="dermspain">
+                    <h6>Dermapen</h6>
+                    <p>dermapen es muy bueno</p>
+                </div>
+                <button class="btn-theme-home">Vill du veta mer...</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="content">
+        @await Html.PartialAsync("_HeaderSwedish")
+        <div class="mainpagepc">
+        <div class="textbodysecondtextpc1">
+            <h1>Välkommen till LGH Estetisk Medicin</h1>
+        </div>
+        <div class="mainboxpc">
+            <div class="boxessven1">
+                <div class="textfacialsecondtext">
+                    <h3>Ansikts Behandlingar</h3>
+                </div>
+                <div class="box1sv">
+                    <img src="~/images/dermapen.jpeg" width="100px" class="imgderm" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Microneedling</h6>
+                        <p>Microneedling-behandling som förbättrar hudens struktur, minskar ärr, pigmentfläckar och ger lyster</p>
+                    </div>
+                    <button class="btn-theme-home">Vill du veta mer...</button>
+                </div>
+                <div class="box2sv">
+                    <img src="~/images/Microdermoabr.jpeg" width="100px" class="imgmicro" alt="Alternate Text" />
+                   <div class="dermspain">
+                        <h6>Micro</h6>
+                        <p>dermapen es muy bueno</p>
+                    </div>
+                    <button class="btn-theme-home">Vill du veta mer...</button>
+                    
+                </div>
+                <div class="box3sv">
+                    <img src="~/images/Radiocila.jpg" width="100px" class="imgderm" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Dermapen</h6>
+                        <p>dermapen es muy bueno</p>
+                    </div>
+                    <button class="btn-theme-home">Vill du veta mer...</button>
+                </div>
+            </div>
+            <div class="boxessp2">
+                <div class="textbodysecondtext">
+                    <h3></h3>
+                </div>
+                <div class="box4sv">
+                    <div class="imgbox1">
+                        <img src="~/images/cavitation.jpeg" width="100px" width="100px" class="imgcavmini" alt="Alternate Text" />
+                        <p>Dermapen </p>
+                    </div>
+                    <div class="imgbox2">
+                        <img src="~/images/radiofrecorp.jpeg" width="100px" width="100px" class="imgradiomini" alt="Alternate Text" />
+                        <p>Dermapen </p>
+                    </div>
+                    <div class="imgbox3">
+                        <img src="~/images/preso.jpg" width="100px" width="100px" class="imgpresomini" alt="Alternate Text" />
+                        <p>Dermapen </p>
+                    </div>
+                </div>
+                <button class="btn-theme-home">Vill du veta mer...</button>
+            </div>
+            <div class="boxessp3">
+                <div class="box5sv">
+                    <img src="~/images/radiofrecorp.jpeg" width="100px" class="imgradiocorp" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Dermapen</h6>
+                        <p>dermapen es muy bueno</p>
+                    </div>
+                    <button class="btn-theme-home">Vill du veta mer...</button>
+                </div>
+                <div class="box6sv">
+
+                    <div class="dermspain">
+                        <img src="~/images/cavitation.jpeg" width="100px" class="imgdcavit" alt="Alternate Text" />
+                        <h6>Dermapen</h6>
+                        <p>dermapen es muy bueno</p>
+                    </div>
+                    <button class="btn-theme-home">Vill du veta mer...</button>
+                    
+                </div>
+                <div class="box7sv">
+                    <img src="~/images/preso.jpg" width="100px" class="imgpresoterapia" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Dermapen</h6>
+                        <p>dermapen es muy bueno</p>
+                    </div>
+                    <button class="btn-theme-home">Vill du veta mer...</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    @await Html.PartialAsync("_Footer")
     </div>

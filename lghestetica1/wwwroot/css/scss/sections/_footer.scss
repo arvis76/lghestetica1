@@ -1,5 +1,45 @@
-﻿footer{
- .container{
-     background-color:green;
- }
+﻿.footer {
+    background-color: $theme-footer;
+    border-radius:15px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .footer-content {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 0 auto; 
+    padding: 0 5%;
+}
+
+.footer .footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer .social-links {
+    margin-top: 0px;
+   
+  
+
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.footer .socialpic {
+  
+    transition: transform 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    transform: scale(1.5);
 }

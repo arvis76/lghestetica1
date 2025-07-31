@@ -1,0 +1,41 @@
+﻿@{
+	ViewData["Lang"] = "Swedish"; // or "Spanish" or "English"
+}
+
+<header>
+	<div class="language-choise">
+		<a asp-controller="Spanish" asp-action="index"><img src="~/images/spanish.png" class="flagsspan" alt="Espanol" /></a>
+		<a asp-controller="English" asp-action="index"><img src="~/images/english.png" class="flagseng" alt="English" /></a>
+	</div>
+	<div class="loggamainhomepc">
+		<img src="~/images/loggaliz.png" class="loggahome" alt="Logga LGH" />
+		<div class="maintextpc">
+			<h1>Estetisk Medicin</h1>
+		</div>
+	</div>
+	<div class="headbackgroundimagepc">
+		<img src="~/images/fondo_con_floresPC 1.svg" class="loggahomepc" alt="Logga LGH" />
+	</div>
+	<div class="horizontal-menu">
+		<a asp-controller="Swedish" asp-action="Index">Home</a>
+		<div class="dropdown2">
+			<a href="#">Ansiktsbehandlingar</a>
+			<div class="dropdown-content2">
+				<a asp-controller="AnsiktsBehandlingar" asp-action="Microneedling">Microneedling</a>
+				<a asp-controller="AnsiktsBehandlingar" asp-action="Mikrodermabrasion">Microdermabrasion</a>
+				<a asp-controller="AnsiktsBehandlingar" asp-action="RFLifting">RF Lifting</a>
+			</div>
+		</div>
+		<div class="dropdown2">
+			<a href="#">Kroppsbehandlingar</a>
+			<div class="dropdown-content2">
+				<a asp-controller="KroppsBehandlingar" asp-action="Cavitation">Cavitation</a>
+				<a asp-controller="KroppsBehandlingar" asp-action="Pressoterapi">Pressoterapi</a>
+				<a asp-controller="KroppsBehandlingar" asp-action="RFBehandling">RF Behandling</a>
+				<a asp-controller="KroppsBehandlingar" asp-action="Cellulitbehandling">Cellulitbehandling</a>
+			</div>
+		</div>
+		<a asp-controller="English" asp-action="Contact">Contact us</a>
+		<a asp-controller="English" asp-action="Prices">Prices</a>
+	</div>
+</header>

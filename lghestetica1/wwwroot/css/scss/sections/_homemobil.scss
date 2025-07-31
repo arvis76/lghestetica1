@@ -5,223 +5,107 @@
 
     .loggahome {
         width: 50%;
-    }
-
+    }  
 }
+
 .loggamainpages {
     position: absolute;
-    top: 0%;
-    left: 40%;
-    gap:20px;
-
-    .loggahomepages {
-        width: 55%;
-    }
-
-   
+    top: -8%;
+    left: 15%;
 }
-.textbodytitle{
-    position:absolute;
-    top:20%;
-    margin:10%;
-}
-.textbodytitlesp {
-    position: absolute;
-    top: 23%;
-    margin: 5%;
-}
-.boxessp1 {
-    position: absolute;
-    top: 50%;
-    width: 85%;
-    gap: 20px;
-    height: 80px;
-
-
-    .box1 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
-    }
-
-    .box2 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
-    }
-
-    .box3 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
-    }
-}
-.boxessp2 {
-    position: absolute;
-    top: 90%;
-    height: 80px;
+.imgfondmain{
     width:100%;
-
-    .box4 {
-        display: flex;
-        background-color: aquamarine;
-        height: 90px;
-        width:80%;
-
-        .imgbox1 {
-            display: grid;
-        }
-
-        .imgbox2 {
-            display: grid;
-        }
-
-        .imgbox3 {
-            display: grid;
-        }
-    }
+    height:100vh;
 }
-
-.boxessp3 {
+.texthomefacial {
     position: absolute;
-    bottom: -20%;
-    width: 85%;
-    gap: 20px;
-    height: 80px;
+    left: 28%;
+    top: 15%;
+}
+.mainmainbox {
+    display: flex;
+    justify-content: center;
 
-    .box5 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
-    }
-
-    .box6 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
-    }
-
-    .box7 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
+    .mainbox {
+        position: static;
+        width: 80%;       
+        background-color: $theme-secondary;
+        margin: 15px auto; 
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 0 5px 5px #999;
     }
 }
-
-    .boxessv1 {
-        position: absolute;
-        top: 30px;
-    }
-
-    .boxessv2 {
-        position: absolute;
-        top: 40px;
-    }
-
-.boxessv3 {
-    position: absolute;
-    top: 50px;
-
-    .box5 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
-    }
-
-    .box6 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
-    }
-
-    .box7 {
-        display: flex;
-        background-color: aqua;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px;
-        height: 100px;
-    }
+.textfacialsecondtextfac {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.textbodysecondtextcorp {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.loggahomepages {
+    width: 100%;
+    margin-right: 10%;
+}
+.imgfondohomebody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-    .boxesen1 {
+.imgfondbody {
+    width: 100%;
+    height: auto;
+}
+  .textbodytitle {
         position: absolute;
-        top: 30px;
-    }
-
-    .boxesen2 {
-        position: absolute;
-        top: 40px;
-    }
-
-    .boxesen3 {
-        position: absolute;
-        top: 50px;
+        top: 20%;
+        margin: 10%;
     }
 
     .textfacialsecondtext {
         margin: 10%;
-        position: absolute;
-        top: 35%;
     }
 
-    .textbodysecondtext {
-        margin: 8%;
-        position: absolute;
-        top: 70%;
-    }
+.textbodysecondtext{
+    text-align:center;
+    margin-bottom:20px;
+    margin-top:-50px;
+}
 
-    .textbodysecondtexten {
-        margin: 20%;
-        position: absolute;
-        top: 18%;
-    }
+.textbodysecondtexten {
+    margin: 20%;
+    position: absolute;
+    top: 18%;
+}
 
     .imgfondhome {
-        width: 100%;
+        height:100vh;
     }
 
-    .menubar {
-        position: absolute;
-        top: 2%;
-        font-size: 80px;
-        cursor: pointer;
-        padding: 15px;
-        color: black; /* or white depending on your background */
-        text-decoration: none;
-    }
+.menubar {
+    position: absolute;
+    top: 2%;
+    font-size: 80px;
+    cursor: pointer;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+}
 
-    .dropdown-content {
-        width: 50%;
-        display: none;
-        background-color: white;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
+.dropdown-content {
+    position: absolute;
+    width: 50%;
+    top: 2.3%;
+    display: none;
+    background-color: $theme-secondary;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:20px;
+}
 
     .dropdown-content a {
         color: black;
@@ -230,16 +114,54 @@
         display: block;
     }
 
-    .dropdown-content a:hover {
-        background-color: green;
-    }
+.dropdown-content a:hover {
+    background-color: $theme;
+}
 
     .show {
         display: block;
     }
+
 
     .texthome {
         position: absolute;
         top: 50%;
         left: 25%;
     }
+.imgpresomainimg {
+    width: 30%;
+    height:10%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 15%;
+}
+.imgdcavitmainpic{
+    width:30%;
+    margin-left:5%;
+    margin-top:5%;
+    border-radius:15%;
+}
+.imgdermmainpic {
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 15%;
+}
+.imgmicromainpic {
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 15%;
+}
+.imgradiofacmainpic {
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 15%;
+}
+.imgradiocorpmainpic {
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 15%;
+}

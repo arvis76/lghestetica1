@@ -1,12 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace lghestetica1.Controllers
+namespace lghestetica1.Controllers;
+
+public class EnglishController : Controller
 {
-	public class EnglishController : Controller
+	public IActionResult Index()
 	{
-		public IActionResult Index()
-		{
-			return View();
-		}
+		return View();
+	}
+	public IActionResult Contact()
+	{
+		return View();
+	}
+	public IActionResult Prices()
+	{
+		return View();
 	}
 }
