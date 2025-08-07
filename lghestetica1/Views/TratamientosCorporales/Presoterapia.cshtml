@@ -4,13 +4,14 @@
 
     <div class="content contentmobilhome">
         @await Html.PartialAsync("_HeaderTratamientosCorporal")
-    <div class="textbodysecondtext">
-        <h4>Pressoterapia –</h4>
-        <h5> Drenaje Linfático y Tratamiento Detox Relajante para el Cuerpo y el Bienestar</h5>
-    </div>
+  
         <div class="mainmainbox">
             
             <div class="mainbox">
+            <div class="textbodysecondtext">
+                <h4>Pressoterapia –</h4>
+                <h5> Drenaje Linfático y Tratamiento Detox Relajante para el Cuerpo y el Bienestar</h5>
+            </div>
                 <div class="imgcavitspain">
                     <img src="~/images/preso.jpg" width="100%" class="imgpresomainimg" alt="Alternate Text" />
                     <h6>¿Qué es la pressoterapia?</h6>
@@ -48,6 +49,7 @@
                         ⚡Frecuencia: 1 a 3 veces por semana<br />
                         ⚡ Mantenimiento: Continuación (por ejemplo, 1 sesión por semana) para mantener el equilibrio de la circulación a largo plazo<br />
                         ⚡ Consejo: Bebe abundante agua antes y después del tratamiento para optimizar el drenaje<br />
+                    <button class="btn-theme-homepc btn-precios"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
                     </p>
                 </div>
             </div>
@@ -59,7 +61,7 @@
             <div class="textbodysecondtext">
                 <h3>Pressoterapia – Drenaje Linfático y Tratamiento Detox Relajante para el Cuerpo y el Bienestar</h3>
             </div>
-            <div class="mainbox">
+            <div class="mainboxpc">
                 <div class="imgcavitspain">
                     <img src="~/images/preso.jpg" width="100%" class="imgpresomainimg" alt="Alternate Text" />
                     <h6>¿Qué es la pressoterapia?</h6>
@@ -97,8 +99,10 @@
                         ⚡Frecuencia: 1 a 3 veces por semana<br />
                         ⚡Mantenimiento: Continuación (por ejemplo, 1 sesión por semana) para mantener el equilibrio de la circulación a largo plazo<br />
                         ⚡Consejo: Bebe abundante agua antes y después del tratamiento para optimizar el drenaje<br />
+                    <button class="btn-theme-homepc btn-preciospc"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
                     </p>
                 </div>
             </div>
         </div>
+    @await Html.PartialAsync("_Footer")
     </div>

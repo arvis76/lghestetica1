@@ -1,18 +1,16 @@
 ﻿html, body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: $theme;
-}
+        margin: 0;
+        padding: 0;
+       
+        background-color: $theme;
+    }
 
 .wrapper {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    padding: 10px;
+    height: 100%;
     box-sizing: border-box;
-    margin: 10px;
-    
+   
 }
 
 
@@ -27,8 +25,9 @@
 
 
 .content .contentmobilhome .contentmobilmain {
-    display: grid;
-    
+    display: relative;
+   
+   
 }
 
 .text-xs {

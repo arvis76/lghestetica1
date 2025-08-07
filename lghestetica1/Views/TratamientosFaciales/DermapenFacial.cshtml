@@ -4,13 +4,13 @@
 
     <div class="content contentmobilhome">
         @await Html.PartialAsync("_HeaderTratamientosFacial")
-    <div class="textbodysecondtext">
-        <h4>Tratamiento con Dermapen-</h4>
-        <h5>Microneedling</h5>
-    </div>
+    
         <div class="mainmainbox">
-           
             <div class="mainbox">
+                <div class="textbodysecondtext">
+                    <h4>Tratamiento con Dermapen-</h4>
+                    <h5>Microneedling</h5>
+                </div>
                 <div class="imgcavitspain">
                     <img src="~/images/dermapen.jpeg" class="imgdermmainpic" alt="Alternate Text" />
                     <h6>¿Qué es Dermapen?</h6>
@@ -45,6 +45,8 @@
                         ⚡ Tiempo de recuperación: Enrojecimiento leve de 24 a 72 horas (similar a una quemadura solar leve)<br />
                         ⚡ Sesiones recomendadas: De 3 a 6, con intervalos de 4–6 semanas<br />
                         ⚡Nuestros especialistas evaluarán tu piel y personalizarán el tratamiento para garantizar resultados óptimos y seguros.<br />
+                    <button class="btn-theme-home btn-precios"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
+
                     </p>
                 </div>
             </div>
@@ -91,8 +93,10 @@
                         ⚡ Tiempo de recuperación: Enrojecimiento leve de 24 a 72 horas (similar a una quemadura solar leve)<br />
                         ⚡ Sesiones recomendadas: De 3 a 6, con intervalos de 4–6 semanas<br />
                         ⚡Nuestros especialistas evaluarán tu piel y personalizarán el tratamiento para garantizar resultados óptimos y seguros.<br />
+                    <button class="btn-theme-homepc btn-preciospc"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
                     </p>
                 </div>
             </div>
         </div>
+    @await Html.PartialAsync("_Footer")
     </div>

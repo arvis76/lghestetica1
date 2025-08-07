@@ -3,62 +3,77 @@
 }
 <div class="content contentmobilhome">
     @await Html.PartialAsync("_HeaderTratamientosCorporal")
-    <div class="textbodysecondtext">
-        <h3>Tratamientos Faciales</h3>
-    </div>
+  
     <div class="mainmainbox">
         <div class="mainbox">
-            <div class="boxemain1corp">
-                <div class="box1corp">
-                    <img src="~/images/radiofrecorp.jpeg" width="100px" height="100px" class="imgradiocorp" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Radiofrecuencia Corporal</h6>
-                        <p>tratamiento estético que estimula el colágeno, mejora la firmeza de la piel y combate la flacidez...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
-                    </div>
-               </div>
-               <div class="box2corp">
-                    <div class="dermspain">
-                        <img src="~/images/cavitation.jpeg" width="100px" height="100px" class="imgdcavit" alt="Alternate Text" />
-                        <h6>Cavitación</h6>
-                        <p>Tratamiento no invasivo que utiliza ultrasonido para romper células de grasa y reducir medidas corporales...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
-                    </div>
-               </div>
-               <div class="box3corp">
-                    <img src="~/images/preso.jpg" width="100px" height="100px" class="imgpresoterapia" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Presoterapia</h6>
-                        <p>Tratamiento que mejora la circulación y reduce la retención de líquidos mediante presión de aire controlada...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
-                     </div>
-               </div>
+            <div class="textbodysecondtext">
+                <h4>Tratamientos Corporales</h4>
             </div>
-            <div class="boxemain2corp">
-                <div class="textbodysecondtext">
-                    <h4>Tratamientos Corporales</h4>
+            <div class="boxemain1corp">
+              <div class="boxmain2index">
+                    <div class="boxanticelmain">
+                        <h6 class="txtmainheadantce">Tratamientos Anticelulitis</h6>
+                        <div class="box1anticelmain">
+                            <div class="anticelbox">
+                            <div class="imgbox1">
+                                <img src="~/images/cavitation.jpeg" class="imgcavminimain1" alt="Alternate Text" />
+                                <p>Cavitación</p>
+                            </div>
+                            <h1 class="pluscavmini">+</h1>
+                            <div class="imgbox2">
+                                <img src="~/images/radiofrecorp.jpeg" class="imgcavminimain1" alt="Alternate Text" />
+                                <p>Radiofrecuencia Corporal</p>
+                            </div>
+                            </div>
+                            <h1 class="antiselplus">+</h1>
+                            <div class="anticelbox2">
+                            <h1 class="pluscavmini">+</h1>
+                            <div class="imgbox3">
+                                <img src="~/images/preso.jpg" class="imgcavminimain1" alt="Alternate Text" />
+                                <p>Presopterapia</p>
+                            </div>
+                            <div class="imgbox4">
+                                <img src="~/images/Vauterapia.jpg" class="imgcavminimain1" alt="Alternate Text" />
+                                <p>Vacuterapia</p>
+                            </div>
+                    </div>
+                            <div class="boxbtnanticetxt">
+                                <p>procedimientos estéticos que ayudan a reducir la apariencia de la celulitis, mejorando la textura y firmeza de la piel...</p>
+                                <button class="btn-theme-home btn-anticel"><a asp-controller="TratamientosCorporales" asp-action="Anticelulitis" class="btn-home-page">¿Quieres saber más?</a></button>
+                            </div>
+                        </div>
+                      
+                    </div>
                 </div>
-                <div class="box4corp">
-                    <h6>Tratamientos Anticelulitis</h6>
-                    <div class="imgbox1">
-                        <img src="~/images/cavitation.jpeg" width="50px" height="30px" class="imgcavmini" alt="Alternate Text" />
-                        <p>Cavitación</p>
+                <div class="boxmain3index">
+                    <div class="box5index">
+                        <img src="~/images/radiofrecorp.jpeg" class="imgderm" alt="Alternate Text" />
+                        <div class="dermspain">
+                            <h6>Radiofrecuencia Corporal</h6>
+                            <p>tratamiento estético que estimula el colágeno, mejora la firmeza de la piel y combate la flacidez...</p>
+                            <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal" class="btn-home-page">¿Quieres saber más?</a></button>
+                        </div>
+
                     </div>
-                    <h1>+</h1>
-                    <div class="imgbox2">
-                        <img src="~/images/radiofrecorp.jpeg" width="50px" height="30px" class="imgradiomini" alt="Alternate Text" />
-                        <p>Radiofrecuencia Corporal</p>
+                    <div class="box6index">
+                        <img src="~/images/cavitation.jpeg" class="imgderm" alt="Alternate Text" />
+                        <div class="dermspain">
+                            <h6>Cavitación</h6>
+                            <p>Tratamiento no invasivo que utiliza ultrasonido para romper células de grasa y reducir medidas corporales...</p>
+                            <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="Cavitacion" class="btn-home-page">¿Quieres saber más?</a></button>
+                        </div>
                     </div>
-                    <h1>+</h1>
-                    <div class="imgbox3">
-                        <img src="~/images/preso.jpg" width="50px" height="30px" class="imgpresomini" alt="Alternate Text" />
-                        <p>Dermapen </p>
+                    <div class="box7index">
+                        <img src="~/images/preso.jpg" class="imgderm" alt="Alternate Text" />
+                        <div class="dermspain">
+                            <h6>Presoterapia</h6>
+                            <p>Tratamiento que mejora la circulación y reduce la retención de líquidos mediante presión de aire controlada...</p>
+                            <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="Presoterapia" class="btn-home-page">¿Quieres saber más?</a></button>
+                        </div>
                     </div>
+                  </div>         
                 </div>
-            <p>procedimientos estéticos que ayudan a reducir la apariencia de la celulitis, mejorando la textura y firmeza de la piel...</p>
-            <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
-        </div>
-    </div>
+  </div>
   </div>
 </div>
 <div class="content">
@@ -66,7 +81,67 @@
     <div class="mainpagepc">
         <div class="textbodysecondtexten">
             <h3>Tratmientos Corporales</h3>
+       </div>
+        <div class="mainboxpc">
+            <div class="boxemain1corp">
+                <div class="textbodysecondtextcorp">
+                    <h4>Tratamientos Corporales</h4>
+                </div>
+                <div class="boxmain2index">
+                    <div class="box4index">
+                        <h6>Tratamientos Anticelulitis</h6>
+                        <div class="box2anticel">
+                            <div class="imgbox1">
+                                <img src="~/images/cavitation.jpeg" class="imgcavmini" alt="Alternate Text" />
+                                <p>Cavitación</p>
+                            </div>
+                            <h1 class="pluscavmini">+</h1>
+                            <div class="imgbox2">
+                                <img src="~/images/radiofrecorp.jpeg" class="imgcavmini" alt="Alternate Text" />
+                                <p>Radiofrecuencia Corporal</p>
+                            </div>
+                            <h1 class="pluscavmini">+</h1>
+                            <div class="imgbox3">
+                                <img src="~/images/preso.jpg" class="imgcavmini" alt="Alternate Text" />
+                                <p>Dermapen </p>
+                            </div>
 
+                        </div>
+                        <div class="box4anticetxt">
+                            <p>procedimientos estéticos que ayudan a reducir la apariencia de la celulitis, mejorando la textura y firmeza de la piel...</p>
+                            <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="Anticelulitis" class="btn-home-page">¿Quieres saber más?</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxmain3index">
+                    <div class="box5index">
+                        <img src="~/images/radiofrecorp.jpeg" class="imgderm" alt="Alternate Text" />
+                        <div class="dermspain">
+                            <h6>Radiofrecuencia Corporal</h6>
+                            <p>tratamiento estético que estimula el colágeno, mejora la firmeza de la piel y combate la flacidez...</p>
+                            <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal" class="btn-home-page">¿Quieres saber más?</a></button>
+                        </div>
+
+                    </div>
+                    <div class="box6index">
+                        <img src="~/images/cavitation.jpeg" class="imgderm" alt="Alternate Text" />
+                        <div class="dermspain">
+                            <h6>Cavitación</h6>
+                            <p>Tratamiento no invasivo que utiliza ultrasonido para romper células de grasa y reducir medidas corporales...</p>
+                            <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="Cavitacion" class="btn-home-page">¿Quieres saber más?</a></button>
+                        </div>
+                    </div>
+                    <div class="box7index">
+                        <img src="~/images/preso.jpg" class="imgderm" alt="Alternate Text" />
+                        <div class="dermspain">
+                            <h6>Presoterapia</h6>
+                            <p>Tratamiento que mejora la circulación y reduce la retención de líquidos mediante presión de aire controlada...</p>
+                            <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="Presoterapia" class="btn-home-page">¿Quieres saber más?</a></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
+    @await Html.PartialAsync("_Footer")
     </div>
-</div>

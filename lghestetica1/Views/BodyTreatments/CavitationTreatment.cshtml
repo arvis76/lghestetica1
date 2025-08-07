@@ -2,105 +2,112 @@
     ViewData["Title"] = "LGH Body Treatments ";
 }
 
-    <div class="content contentmobilhome">
-        @await Html.PartialAsync("_HeaderEnglishMobile")
-        <div class="textbodysecondtexten">
-            <h4>Ultrasound Cavitation – </h4>
-            <h5>Non-Surgical Fat Reduction & Body Sculpting</h5>
-        </div>
-        <div class="mainmainbox">
-           
-            <div class="mainbox">
-                <div class="imgcavitspain">
-                    <img src="~/images/cavitation.jpeg" width="50px" height="30px" class="imgdcavitmainpic" alt="Alternate Text" />
-                    <h6>What is Cavitation? </h6>
-                    <p>
-                        Ultrasound cavitation is a non-invasive body contouring treatment that uses low-frequency ultrasound waves to break down stubborn fat cells in targeted areas of the body. This safe and painless procedure liquefies fat, which is then naturally eliminated through the lymphatic system — without surgery, needles, or downtime.
-                        It’s an excellent alternative to liposuction for those looking to slim, sculpt, and smooth their figure naturally.
-                    </p>
-                    <h6>What Is Cavitation Used For?</h6>
-                    <p>
-                        Cavitation is ideal for treating localized fat and improving body shape in areas such as:
-                        ✅ Abdomen and waist (“belly fat”)
-                        ✅ Hips and love handles
-                        ✅ Inner and outer thighs
-                        ✅ Upper arms
-                        ✅ Back fat
-                        ✅ Cellulite-prone areas
-                        This treatment is especially helpful when diet and exercise alone aren’t enough to reduce stubborn fat deposits.
-                    </p>
-                    <h6>Key Benefits of Cavitation</h6>
-                    <p>
-                        ✨ Breaks down localized fat non-invasively<br/>
-                        ✨ Reduces body circumference and improves contours<br />
-                        ✨Stimulates lymphatic drainage and detoxification<br />
-                        ✨ Smooths the appearance of cellulite<br />
-                        ✨ Painless and relaxing — no needles or downtime<br />
-                        ✨ Helps tighten the skin when combined with radiofrequency<br />
-                    </p>
-                    <h6>How Does Cavitation Work?</h6>
-                    <p>
-                        During the treatment, a handheld device is moved over the skin, emitting ultrasound waves that penetrate the fat layer beneath the skin. These waves create tiny bubbles in the fat cells, causing them to break apart (a process called cavitation). The fat is then naturally metabolized and eliminated by the body’s lymphatic system over the following days.
-                        Most clients find the treatment comfortable and soothing, with no downtime required.
-                    </p>
-                    <h6>Recommended Treatment Plan</h6>
-                    <p>
-                        ⚡ Sessions: 6–10 sessions for visible and lasting results<br />
-                        ⚡Frequency: 1–2 times per week<br />
-                        ⚡ Maintenance: Monthly sessions or as needed for upkeep<br />
-                        ⚡ Tip: Stay well hydrated before and after to support fat elimination<br />
-                    </p>
-                </div>
+
+<div class="content contentmobilhome">
+    @await Html.PartialAsync("_HeaderTratamientosCorporal")
+
+    <div class="mainmainbox">
+
+        <div class="mainbox">
+            <div class="textbodysecondtext">
+                <h4>Ultrasound Cavitation – </h4>
+                <h5>Non-Surgical Fat Reduction & Body Sculpting</h5>
+            </div>
+            <div class="imgcavitspain">
+                <img src="~/images/cavitation.jpeg" class="imgdcavitmainpic" alt="Alternate Text" />
+                <h6>What is Cavitation? </h6>
+                <p>
+                    Ultrasound cavitation is a non-invasive body contouring treatment that uses low-frequency ultrasound waves to break down stubborn fat cells in targeted areas of the body. This safe and painless procedure liquefies fat, which is then naturally eliminated through the lymphatic system — without surgery, needles, or downtime.
+                    It’s an excellent alternative to liposuction for those looking to slim, sculpt, and smooth their figure naturally.
+                </p>
+                <h6>What Is Cavitation Used For?</h6>
+                <p>
+                    Cavitation is ideal for treating localized fat and improving body shape in areas such as:
+                    ✅ Abdomen and waist (“belly fat”)
+                    ✅ Hips and love handles
+                    ✅ Inner and outer thighs
+                    ✅ Upper arms
+                    ✅ Back fat
+                    ✅ Cellulite-prone areas
+                    This treatment is especially helpful when diet and exercise alone aren’t enough to reduce stubborn fat deposits.
+                </p>
+                <h6>Key Benefits of Cavitation</h6>
+                <p>
+                    ✨ Breaks down localized fat non-invasively<br />
+                    ✨ Reduces body circumference and improves contours<br />
+                    ✨Stimulates lymphatic drainage and detoxification<br />
+                    ✨ Smooths the appearance of cellulite<br />
+                    ✨ Painless and relaxing — no needles or downtime<br />
+                    ✨ Helps tighten the skin when combined with radiofrequency<br />
+                </p>
+                <h6>How Does Cavitation Work?</h6>
+                <p>
+                    During the treatment, a handheld device is moved over the skin, emitting ultrasound waves that penetrate the fat layer beneath the skin. These waves create tiny bubbles in the fat cells, causing them to break apart (a process called cavitation). The fat is then naturally metabolized and eliminated by the body’s lymphatic system over the following days.
+                    Most clients find the treatment comfortable and soothing, with no downtime required.
+                </p>
+                <h6>Recommended Treatment Plan</h6>
+                <p>
+                    ⚡ Sessions: 6–10 sessions for visible and lasting results<br />
+                    ⚡Frequency: 1–2 times per week<br />
+                    ⚡ Maintenance: Monthly sessions or as needed for upkeep<br />
+                    ⚡ Tip: Stay well hydrated before and after to support fat elimination<br />
+                </p>
+                    <button class="btn-theme-home btn-precios"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
+                </p>
             </div>
         </div>
     </div>
-    <div class="content">
-        @await Html.PartialAsync("_HeaderEnglish")
-        <div class="mainpagepc">
-            <div class="textbodysecondtexten">
-                <h3>Ultrasound Cavitation – Non-Surgical Fat Reduction & Body Sculpting</h3>
-            </div>
-            <div class="mainbox">
-                <div class="imgcavitspain">
-                    <img src="~/images/cavitation.jpeg" width="50px" height="30px" class="imgdcavitmainpic" alt="Alternate Text" />
-                    <h6>What is Cavitation? </h6>
-                    <p>
-                        Ultrasound cavitation is a non-invasive body contouring treatment that uses low-frequency ultrasound waves to break down stubborn fat cells in targeted areas of the body. This safe and painless procedure liquefies fat, which is then naturally eliminated through the lymphatic system — without surgery, needles, or downtime.
-                        It’s an excellent alternative to liposuction for those looking to slim, sculpt, and smooth their figure naturally.
-                    </p>
-                    <h6>What Is Cavitation Used For?</h6>
-                    <p>
-                        Cavitation is ideal for treating localized fat and improving body shape in areas such as:
-                        ✅ Abdomen and waist (“belly fat”)
-                        ✅ Hips and love handles
-                        ✅ Inner and outer thighs
-                        ✅ Upper arms
-                        ✅ Back fat
-                        ✅ Cellulite-prone areas
-                        This treatment is especially helpful when diet and exercise alone aren’t enough to reduce stubborn fat deposits.
-                    </p>
-                    <h6>Key Benefits of Cavitation</h6>
-                    <p>
-                        ✨ Breaks down localized fat non-invasively<br />
-                        ✨ Reduces body circumference and improves contours<br />
-                        ✨ Stimulates lymphatic drainage and detoxification<br />
-                        ✨ Smooths the appearance of cellulite<br />
-                        ✨Painless and relaxing — no needles or downtime<br />
-                        ✨ Helps tighten the skin when combined with radiofrequency<br />
-                    </p>
-                    <h6>How Does Cavitation Work?</h6>
-                    <p>
-                        During the treatment, a handheld device is moved over the skin, emitting ultrasound waves that penetrate the fat layer beneath the skin. These waves create tiny bubbles in the fat cells, causing them to break apart (a process called cavitation). The fat is then naturally metabolized and eliminated by the body’s lymphatic system over the following days.
-                        Most clients find the treatment comfortable and soothing, with no downtime required.
-                    </p>
-                    <h6>Recommended Treatment Plan</h6>
-                    <p>
-                        ⚡Sessions: 6–10 sessions for visible and lasting results<br />
-                        ⚡ Frequency: 1–2 times per week<br />
-                        ⚡ Maintenance: Monthly sessions or as needed for upkeep<br />
-                        ⚡Tip: Stay well hydrated before and after to support fat elimination<br />
-                    </p>
-                </div>
+</div>
+<div class="content">
+    @await Html.PartialAsync("_HeaderSpanish")
+    <div class="mainpagepc">
+        <div class="textbodysecondtext">
+            <h1>Ultrasound Cavitation – Non-Surgical Fat Reduction & Body Sculpting</h1>
+        </div>
+        <div class="mainboxpc">
+            <div class="imgcavitspain">
+                <img src="~/images/cavitation.jpeg" class="imgdcavitmainpic" alt="Alternate Text" />
+                <h6>What is Cavitation? </h6>
+                <p>
+                    Ultrasound cavitation is a non-invasive body contouring treatment that uses low-frequency ultrasound waves to break down stubborn fat cells in targeted areas of the body. This safe and painless procedure liquefies fat, which is then naturally eliminated through the lymphatic system — without surgery, needles, or downtime.
+                    It’s an excellent alternative to liposuction for those looking to slim, sculpt, and smooth their figure naturally.
+                </p>
+                <h6>What Is Cavitation Used For?</h6>
+                <p>
+                    Cavitation is ideal for treating localized fat and improving body shape in areas such as:
+                    ✅ Abdomen and waist (“belly fat”)
+                    ✅ Hips and love handles
+                    ✅ Inner and outer thighs
+                    ✅ Upper arms
+                    ✅ Back fat
+                    ✅ Cellulite-prone areas
+                    This treatment is especially helpful when diet and exercise alone aren’t enough to reduce stubborn fat deposits.
+                </p>
+                <h6>Key Benefits of Cavitation</h6>
+                <p>
+                    ✨ Breaks down localized fat non-invasively<br />
+                    ✨ Reduces body circumference and improves contours<br />
+                    ✨ Stimulates lymphatic drainage and detoxification<br />
+                    ✨ Smooths the appearance of cellulite<br />
+                    ✨Painless and relaxing — no needles or downtime<br />
+                    ✨ Helps tighten the skin when combined with radiofrequency<br />
+                </p>
+                <h6>How Does Cavitation Work?</h6>
+                <p>
+                    During the treatment, a handheld device is moved over the skin, emitting ultrasound waves that penetrate the fat layer beneath the skin. These waves create tiny bubbles in the fat cells, causing them to break apart (a process called cavitation). The fat is then naturally metabolized and eliminated by the body’s lymphatic system over the following days.
+                    Most clients find the treatment comfortable and soothing, with no downtime required.
+                </p>
+                <h6>Recommended Treatment Plan</h6>
+                <p>
+                    ⚡Sessions: 6–10 sessions for visible and lasting results<br />
+                    ⚡ Frequency: 1–2 times per week<br />
+                    ⚡ Maintenance: Monthly sessions or as needed for upkeep<br />
+                    ⚡Tip: Stay well hydrated before and after to support fat elimination<br />
+                </p>
+                    <button class="btn-theme-homepc btn-preciospc"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
+                </p>
             </div>
         </div>
     </div>
+    @await Html.PartialAsync("_Footer")
+</div>

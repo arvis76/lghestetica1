@@ -49,13 +49,14 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+
 }
 .horizontal-menu {
     display: flex;
-    gap: 10%;
+    gap: 5%;
     justify-content: center;
     background-color: $theme-header;
-    padding: 40px;
+    padding: 20px 20px;
     position: relative;
 }
 
@@ -64,38 +65,55 @@
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
+    font-size: 24px;
+    padding: 20px 20px;
 }
 
 .horizontal-menu a:hover {
-    background-color: aqua;
-    padding:10px;
+    background-color: $theme;
 }
 
 .dropdown2 {
     position: relative;
+    padding: 20px 20px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dropdown2:hover {
+    background-color: $theme;
+}
+
+.dropdown2 > a {
+    color: black;
+    text-decoration: none;
 }
 
 .dropdown-content2 {
     position: absolute;
-    width: 100%;
-    top: 25px;
+    top: 100%;
+    left: 0;
     display: none;
     background-color: $theme-secondary;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
+    min-width: 100px; /* optional: ensures dropdown has some width */
 }
 
 .dropdown-content2 a {
     position: relative;
     color: black;
-    padding: 10px;
+    padding: 15px 20px;
     display: block;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .dropdown-content2 a:hover {
     background-color: $theme;
-    color: white; /* to keep text readable on white background */
+    color: white;
 }
 
 .dropdown2:hover .dropdown-content2 {

@@ -5,13 +5,14 @@
     <div class="content contentmobilhome">
 
         @await Html.PartialAsync("_HeaderTratamientosCorporal")
-    <div class="textbodysecondtext">
-        <h4>Radiofrecuencia Corporal – </h4>
-        <h5>Reafirma, Moldea y Mejora la Piel sin Cirugía</h5>
-    </div>
+    
         <div class="mainmainbox">
             
             <div class="mainbox">
+            <div class="textbodysecondtext">
+                <h4>Radiofrecuencia Corporal – </h4>
+                <h5>Reafirma, Moldea y Mejora la Piel sin Cirugía</h5>
+            </div>
                 <div class="imgcavitspain">
                     <img src="~/images/radiofrecorp.jpeg" class="imgradiocorpmainpic" alt="Alternate Text" />
                     <h6>¿Qué es la radiofrecuencia corporal?</h6>
@@ -47,6 +48,7 @@
                         ⚡Sesiones recomendadas: 6 a 10 sesiones, dependiendo de la zona y objetivos<br />
                         ⚡ Frecuencia: 1 o 2 veces por semana<br />
                         ⚡ Mantenimiento: 1 sesión mensual para prolongar los resultados<br />
+                    <button class="btn-theme-homepc btn-precios"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
                     </p>
                 </div>
             </div>
@@ -56,9 +58,9 @@
         @await Html.PartialAsync("_HeaderSpanish")
         <div class="mainpagepc">
             <div class="textbodysecondtext">
-                <h3>Radiofrecuencia Corporal – Reafirma, Moldea y Mejora la Piel sin Cirugía</h3>
+                <h1>Radiofrecuencia Corporal – Reafirma, Moldea y Mejora la Piel sin Cirugía</h1>
             </div>
-            <div class="mainbox">
+            <div class="mainboxpc">
                 <div class="imgcavitspain">
                     <img src="~/images/radiofrecorp.jpeg" width="50px" height="30px" class="imgradiocorpmainpic" alt="Alternate Text" />
                     <h6>¿Qué es la radiofrecuencia corporal?</h6>
@@ -94,8 +96,10 @@
                         ⚡Sesiones recomendadas: 6 a 10 sesiones, dependiendo de la zona y objetivos<br />
                         ⚡ Frecuencia: 1 o 2 veces por semana<br />
                         ⚡ Mantenimiento: 1 sesión mensual para prolongar los resultados<br />
+                    <button class="btn-theme-homepc btn-preciospc"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
                     </p>
                 </div>
             </div>
         </div>
+    @await Html.PartialAsync("_Footer")
     </div>

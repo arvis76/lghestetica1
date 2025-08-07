@@ -2,181 +2,107 @@
     ViewData["Title"] = "LGH Estetica avanzada";
 }
 
-    <div class="content contentmobilhome">
+<div class="content contentmobilhome">
     @await Html.PartialAsync("_HeaderSwedishMobile")
     <div class="mainmainbox">
-        <div class="textbodytitlesp">
-            <h1>Estetisk Medicin</h1>
-        </div>
         <div class="mainbox">
-        <div class="boxessp1">
-            <div class="textfacialsecondtext">
-                <h4>Ansikts Behandlingar</h4>
+            <div class="textfacialsecondtextfac">
+                <h4>Ansiktsbehandlingar</h4>
             </div>
-            <div class="box1sv">
-                <img src="~/images/dermapen.jpeg" width="100px" height="100px" class="imgderm" alt="Alternate Text" />
-                <div class="dermspain">
-                    <h6>Microneedling</h6>
-                    <p>Microneedling-behandling som förbättrar hudens struktur, minskar ärr, pigmentfläckar och ger lyster</p>
+            <div class="boxmain1index">
+                <div class="box1index">
+                    <img src="~/images/dermapen.jpeg" class="imgderm" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Dermapen</h6>
+                        <p>Dermapen är en apparat som använder mikronålar för att stimulera kollagenproduktionen och förbättra hudens kvalitet...</p>
+                        <button class="btn-theme-home">
+                            <a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">Vill du veta mer?</a>
+                        </button>
+                    </div>
                 </div>
-                    <button class="btn-theme-home"><a asp-controller="AnsiktsBehandlingar" asp-action="Microneedling" class="btn-home-page">Vill du veta mer...</a></button>
+                <div class="box2index">
+                    <img src="~/images/Microdermoabr.jpeg" class="imgderm1" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Mikrodermabrasion</h6>
+                        <p>Mikrodermabrasion med diamantslipning är en icke-invasiv ansiktsbehandling som varsamt exfolierar huden och förbättrar dess struktur, ton och lyster.</p>
+                        <button class="btn-theme-home">
+                            <a asp-controller="TratamientosFaciales" asp-action="MicrodermoabrasionFacial" class="btn-home-page">Vill du veta mer?</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="box3index">
+                    <img src="~/images/Radiocila.jpg" class="imgderm" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Radiofrekvens för ansiktet</h6>
+                        <p>Radiofrekvens är en icke-invasiv ansiktsbehandling som stimulerar kollagenproduktionen, stramar upp huden och minskar rynkor...</p>
+                        <button class="btn-theme-home">
+                            <a asp-controller="TratamientosFaciales" asp-action="RadiofrecuenciaFacial" class="btn-home-page">Vill du veta mer?</a>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="box2sv">
 
-                <div class="dermspain">
-                <img src="~/images/Microdermoabr.jpeg" width="100px" height="100px" class="imgmicro" alt="Alternate Text" />
-                    <h6>Micro</h6>
-                    <p>dermapen es muy bueno</p>
-                </div>
-                <button class="btn-theme-home">Vill du veta mer...</button>
-                
+            <div class="textbodysecondtextcorp">
+                <h4>Kroppsbehandlingar</h4>
             </div>
-            <div class="box3sv">
-            <img src="~/images/Radiocila.jpg" width="100px" height="100px" class="imgderm" alt="Alternate Text" />
-                <div class="dermspain">
-                    <h6>Dermapen</h6>
-                    <p>dermapen es muy bueno</p>
-                </div>
-                <button class="btn-theme-home">Vill du veta mer...</button>
-            </div>
-        </div>
-        <div class="boxessp2">
-            <div class="textbodysecondtext">
-                <h3></h3>
-            </div>
-            <div class="box4">
-                <div class="imgbox1">
-                    <img src="~/images/cavitation.jpeg" width="50px" height="30px" class="imgcavmini" alt="Alternate Text" />
-                    <p>Dermapen </p>
-                </div>
-                <div class="imgbox2">
-                    <img src="~/images/radiofrecorp.jpeg" width="50px" height="30px" class="imgradiomini" alt="Alternate Text" />
-                    <p>Dermapen </p>
-                </div>
-                <div class="imgbox3">
-                    <img src="~/images/preso.jpg" width="50px" height="30px" class="imgpresomini" alt="Alternate Text" />
-                    <p>Dermapen </p>
+            <div class="boxmain2index">
+                <div class="box4index">
+                    <h6>Anti-cellulitbehandlingar</h6>
+                    <div class="box2anticel2">
+                        <div class="imgbox1">
+                            <img src="~/images/cavitation.jpeg" class="imgcavmini" alt="Alternate Text" />
+                            <p class="imgantictxt">Kavitation</p>
+                        </div>
+                        <div class="imgbox2">
+                            <img src="~/images/radiofrecorp.jpeg" class="imgcavmini" alt="Alternate Text" />
+                            <p class="imgantictxt">Radiofrekvens<br />för kroppen</p>
+                        </div>
+                        <div class="imgbox3">
+                            <img src="~/images/preso.jpg" class="imgcavmini" alt="Alternate Text" />
+                            <p class="imgantictxt">Pressoterapi</p>
+                        </div>
+                    </div>
+                    <div class="box4anticetxt">
+                        <p>Estetiska behandlingar som bidrar till att minska cellulitens synlighet, samt förbättrar hudens struktur och fasthet...</p>
+                        <button class="btn-theme-home btn-antic">
+                            <a asp-controller="TratamientosCorporales" asp-action="Anticelulitis" class="btn-home-page">Vill du veta mer?</a>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <button class="btn-theme-home">Vill du veta mer...</button>
-        </div>
-        <div class="boxessp3">
-            <div class="box5sv">
-            <img src="~/images/radiofrecorp.jpeg" width="100px" height="100px"  class="imgradiocorp" alt="Alternate Text" />
-                <div class="dermspain">
-                    <h6>Dermapen</h6>
-                    <p>dermapen es muy bueno</p>
-                </div>
-                <button class="btn-theme-home">Vill du veta mer...</button>
-            </div>
-            <div class="box6sv">
 
-                <div class="dermspain">
-                <img src="~/images/cavitation.jpeg" width="100px" height="100px" class="imgdcavit" alt="Alternate Text" />
-                    <h6>Dermapen</h6>
-                    <p>dermapen es muy bueno</p>
+            <div class="boxmain3index">
+                <div class="box5index">
+                    <img src="~/images/radiofrecorp.jpeg" class="imgderm" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Radiofrekvens för kroppen</h6>
+                        <p>En icke-invasiv estetisk behandling som stimulerar kollagenproduktionen, förbättrar hudens fasthet och motverkar slapp hud...</p>
+                        <button class="btn-theme-home">
+                            <a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal" class="btn-home-page">Vill du veta mer?</a>
+                        </button>
+                    </div>
                 </div>
-                <button class="btn-theme-home">Vill du veta mer...</button>
-                
-            </div>
-            <div class="box7sv">
-            <img src="~/images/preso.jpg" width="100px" height="100px"  class="imgpresoterapia" alt="Alternate Text" />
-                <div class="dermspain">
-                    <h6>Dermapen</h6>
-                    <p>dermapen es muy bueno</p>
+                <div class="box6index">
+                    <img src="~/images/cavitation.jpeg" class="imgderm" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Kavitation</h6>
+                        <p>En icke-invasiv behandling som använder ultraljud för att bryta ner fettceller och minska kroppsomfång...</p>
+                        <button class="btn-theme-home">
+                            <a asp-controller="TratamientosCorporales" asp-action="Cavitacion" class="btn-home-page">Vill du veta mer?</a>
+                        </button>
+                    </div>
                 </div>
-                <button class="btn-theme-home">Vill du veta mer...</button>
-            </div>
+                <div class="box7index">
+                    <img src="~/images/preso.jpg" class="imgderm" alt="Alternate Text" />
+                    <div class="dermspain">
+                        <h6>Pressoterapi</h6>
+                        <p>En behandling som förbättrar blodcirkulationen och minskar vätskeansamling genom kontrollerat lufttryck...</p>
+                        <button class="btn-theme-home">
+                            <a asp-controller="TratamientosCorporales" asp-action="Presoterapia" class="btn-home-page">Vill du veta mer?</a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    <div class="content">
-        @await Html.PartialAsync("_HeaderSwedish")
-        <div class="mainpagepc">
-        <div class="textbodysecondtextpc1">
-            <h1>Välkommen till LGH Estetisk Medicin</h1>
-        </div>
-        <div class="mainboxpc">
-            <div class="boxessven1">
-                <div class="textfacialsecondtext">
-                    <h3>Ansikts Behandlingar</h3>
-                </div>
-                <div class="box1sv">
-                    <img src="~/images/dermapen.jpeg" width="100px" class="imgderm" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Microneedling</h6>
-                        <p>Microneedling-behandling som förbättrar hudens struktur, minskar ärr, pigmentfläckar och ger lyster</p>
-                    </div>
-                    <button class="btn-theme-home">Vill du veta mer...</button>
-                </div>
-                <div class="box2sv">
-                    <img src="~/images/Microdermoabr.jpeg" width="100px" class="imgmicro" alt="Alternate Text" />
-                   <div class="dermspain">
-                        <h6>Micro</h6>
-                        <p>dermapen es muy bueno</p>
-                    </div>
-                    <button class="btn-theme-home">Vill du veta mer...</button>
-                    
-                </div>
-                <div class="box3sv">
-                    <img src="~/images/Radiocila.jpg" width="100px" class="imgderm" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Dermapen</h6>
-                        <p>dermapen es muy bueno</p>
-                    </div>
-                    <button class="btn-theme-home">Vill du veta mer...</button>
-                </div>
-            </div>
-            <div class="boxessp2">
-                <div class="textbodysecondtext">
-                    <h3></h3>
-                </div>
-                <div class="box4sv">
-                    <div class="imgbox1">
-                        <img src="~/images/cavitation.jpeg" width="100px" width="100px" class="imgcavmini" alt="Alternate Text" />
-                        <p>Dermapen </p>
-                    </div>
-                    <div class="imgbox2">
-                        <img src="~/images/radiofrecorp.jpeg" width="100px" width="100px" class="imgradiomini" alt="Alternate Text" />
-                        <p>Dermapen </p>
-                    </div>
-                    <div class="imgbox3">
-                        <img src="~/images/preso.jpg" width="100px" width="100px" class="imgpresomini" alt="Alternate Text" />
-                        <p>Dermapen </p>
-                    </div>
-                </div>
-                <button class="btn-theme-home">Vill du veta mer...</button>
-            </div>
-            <div class="boxessp3">
-                <div class="box5sv">
-                    <img src="~/images/radiofrecorp.jpeg" width="100px" class="imgradiocorp" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Dermapen</h6>
-                        <p>dermapen es muy bueno</p>
-                    </div>
-                    <button class="btn-theme-home">Vill du veta mer...</button>
-                </div>
-                <div class="box6sv">
-
-                    <div class="dermspain">
-                        <img src="~/images/cavitation.jpeg" width="100px" class="imgdcavit" alt="Alternate Text" />
-                        <h6>Dermapen</h6>
-                        <p>dermapen es muy bueno</p>
-                    </div>
-                    <button class="btn-theme-home">Vill du veta mer...</button>
-                    
-                </div>
-                <div class="box7sv">
-                    <img src="~/images/preso.jpg" width="100px" class="imgpresoterapia" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Dermapen</h6>
-                        <p>dermapen es muy bueno</p>
-                    </div>
-                    <button class="btn-theme-home">Vill du veta mer...</button>
-                </div>
-            </div>
-        </div>
-        </div>
-    @await Html.PartialAsync("_Footer")
-    </div>
+</div>

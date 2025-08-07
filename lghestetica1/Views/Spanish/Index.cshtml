@@ -4,16 +4,12 @@
 
 <div class="content contentmobilhome">
     @await Html.PartialAsync("_HeaderSpanishMobile")
-    <div class="mainmainbox">
-        <div class="textbodytitlesp">
-            <h3>Medicina Estetica</h3>
-        </div>
+   <div class="mainmainbox">
         <div class="mainbox">
             <div class="textfacialsecondtextfac">
                 <h4>Tratamientos Faciales</h4>
             </div>
             <div class="boxmain1index">
-              
                 <div class="box1index">
                     <img src="~/images/dermapen.jpeg" class="imgderm" alt="Alternate Text" />
                     <div class="dermspain">
@@ -48,36 +44,39 @@
             <div class="boxmain2index">               
                 <div class="box4index">
                     <h6>Tratamientos Anticelulitis</h6>
-                    <div class="box2anticel">
+                    <div class="box2anticel2">
                     <div class="imgbox1">
                         <img src="~/images/cavitation.jpeg"  class="imgcavmini" alt="Alternate Text" />
-                        <p>Cavitación</p>
-                    </div>
-                    <h1 class="pluscavmini">+</h1>
+                            <p class="imgantictxt">Cavitación</p>
+                   </div>
+                        
+                     
                     <div class="imgbox2">
                             <img src="~/images/radiofrecorp.jpeg" class="imgcavmini" alt="Alternate Text" />
-                        <p>Radiofrecuencia Corporal</p>
+                        <p class="imgantictxt">Radiofrecuencia<br/> Corporal</p>
                     </div>
-                        <h1 class="pluscavmini">+</h1>
+
                     <div class="imgbox3">
                             <img src="~/images/preso.jpg" class="imgcavmini" alt="Alternate Text" />
-                        <p>Dermapen </p>
+                            <p class="imgantictxt">Presoterapia</p>
                     </div>
-                    
-                </div>
+                     
+                    </div>
                     <div class="box4anticetxt">
                         <p>procedimientos estéticos que ayudan a reducir la apariencia de la celulitis, mejorando la textura y firmeza de la piel...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+                        <button class="btn-theme-home btn-antic"><a asp-controller="TratamientosCorporales" asp-action="Anticelulitis" class="btn-home-page ">¿Quieres saber más?</a></button>
                     </div>
                 </div>
-            </div>
+                   
+                </div>
+          
             <div class="boxmain3index">
                 <div class="box5index">
                     <img src="~/images/radiofrecorp.jpeg"  class="imgderm" alt="Alternate Text" />
                     <div class="dermspain">
                         <h6>Radiofrecuencia Corporal</h6>
                         <p>tratamiento estético que estimula el colágeno, mejora la firmeza de la piel y combate la flacidez...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+                        <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
                 
                 </div>
@@ -86,15 +85,16 @@
                    <div class="dermspain">
                         <h6>Cavitación</h6>
                         <p>Tratamiento no invasivo que utiliza ultrasonido para romper células de grasa y reducir medidas corporales...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+                        <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="Cavitacion" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
                 </div>
                 <div class="box7index">
                     <img src="~/images/preso.jpg" class="imgderm" alt="Alternate Text" />
                     <div class="dermspain">
                         <h6>Presoterapia</h6>
+
                         <p>Tratamiento que mejora la circulación y reduce la retención de líquidos mediante presión de aire controlada...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+                        <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="Presoterapia" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
                 </div>
             </div>
@@ -102,92 +102,105 @@
     </div>
 </div>
 <div class="content">
-    @await Html.PartialAsync("_HeaderSwedish")
+    @await Html.PartialAsync("_HeaderSpanish")
+    
     <div class="mainpagepc">
-        <div class="textbodytitlesp">
-            <h1>Medicina Estetica</h1>
-        </div>
-        <div class="mainbox">
-            <div class="boxessp1">
-                <div class="textfacialsecondtext">
-                    <h4>Tratamientos Faciales</h4>
-                </div>
-                <div class="box1sv">
-                    <img src="~/images/dermapen.jpeg" width="100px" height="100px" class="imgderm" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Dermapen</h6>
-                        <p>El dermapen es un dispositivo que usa microagujas para estimular el colágeno y mejorar la piel...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+        
+        <div class="mainboxpc">
+            <div class="textbodysecondtextcorp">
+                <h1>Tratamientos Faciales</h1>
+            </div>
+            <div class="boxmain1indexpc">
+                <div class="box1indexpc">
+                    <img src="~/images/dermapen.jpeg" class="imgdermpc" alt="Alternate Text" />
+                    <div class="dermspainpc">
+                        <h2>Dermapen</h2>
+                        <h5>Dermapen es un tratamiento estético de microneedling que utiliza un dispositivo con microagujas para crear microperforaciones en la piel. Estas pequeñas lesiones activan el proceso natural de regeneración, estimulando la producción de colágeno y elastina. Es ideal para mejorar la textura de la piel, reducir líneas de expresión, cicatrices de acné, poros dilatados, manchas y estrías. El procedimiento es mínimamente invasivo y se adapta a distintos tipos de piel. Tras la sesión, puede presentarse un leve enrojecimiento y es fundamental evitar la exposición solar directa y aplicar protector solar. Con sesiones periódicas, la piel se ve más firme, uniforme y rejuvenecida....</h5>
+                        <button class="btn-theme-homepc"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
-
                 </div>
-                <div class="box2sv">
-
-                    <div class="dermspain">
-                        <img src="~/images/Microdermoabr.jpeg" width="100px" height="100px" class="imgmicro" alt="Alternate Text" />
-                        <h6>Microdermoabrasión con Punta de Diamante </h6>
-                        <p>Microdermoabrasión con punta de diamante: tratamiento facial no invasivo que exfolia suavemente la piel, mejorando textura, tono y luminosidad.</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="MicrodermoabrasionFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+                <div class="box2indexpc">
+                    <img src="~/images/Microdermoabr.jpeg" class="imgderm1pc" alt="Alternate Text" />
+                    <div class="dermspainpc">
+                        <h2>Microdermoabrasión</h2>
+                        <h5>Microdermoabrasión con punta de diamante: La microdermoabrasión es un tratamiento estético no invasivo que exfolia la capa más superficial de la piel utilizando puntas de diamante o cristales finos. El objetivo es eliminar células muertas, mejorar la textura cutánea y estimular la regeneración celular. Es ideal para tratar manchas, cicatrices leves, líneas finas, poros abiertos y piel opaca. El procedimiento es rápido, indoloro y no requiere tiempo de recuperación, por lo que se puede retomar la rutina diaria de inmediato. Después de la sesión, la piel luce más suave, luminosa y uniforme. Se recomienda usar protector solar y evitar la exposición directa al sol. Con varias sesiones, los resultados se potencian y la piel se renueva visiblemente...</h5>
+                        <button class="btn-theme-homepc"><a asp-controller="TratamientosFaciales" asp-action="MicrodermoabrasionFacial" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
 
 
                 </div>
-                <div class="box3sv">
-                    <img src="~/images/Radiocila.jpg" width="100px" height="100px" class="imgderm" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Radiofrecuencia Facial </h6>
-                        <p>Radiofrecuencia Facial: tratamiento no invasivo que estimula el colágeno, reafirma la piel y reduce arrugas...</p>
+                <div class="box3indexpc">
+                    <img src="~/images/Radiocila.jpg" class="imgdermpc" alt="Alternate Text" />
+                    <div class="dermspainpc">
+                        <h2>Radiofrecuencia Facial</h2>
+                        <h5>Radiofrecuencia Facial:La radiofrecuencia facial es un tratamiento estético no invasivo que utiliza ondas electromagnéticas para calentar las capas profundas de la piel, estimulando la producción de colágeno y elastina. Es ideal para combatir la flacidez, mejorar la firmeza del rostro, suavizar arrugas y redefinir el óvalo facial. El procedimiento es indoloro, relajante y no requiere tiempo de recuperación. Desde la primera sesión se nota una piel más tersa y luminosa, y los resultados se intensifican con el tiempo. Es apto para todo tipo de piel y se recomienda realizar varias sesiones para lograr un efecto lifting progresivo y natural....</h5>
+                        <button class="btn-theme-homepc"><a asp-controller="TratamientosFaciales" asp-action="RadiofrecuenciaFacial" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
-                    <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="RadiofrecuenciaFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+
                 </div>
             </div>
-            <div class="boxessp2">
-                <div class="textbodysecondtext">
-                    <h4>Tratamientos Corporales</h4>
-                </div>
-                <div class="box4">
-                    <h6>Tratamientos Anticelulitis</h6>
-                    <div class="imgbox1">
-                        <img src="~/images/cavitation.jpeg" width="50px" height="30px" class="imgcavmini" alt="Alternate Text" />
-                        <p>Cavitación</p>
-                    </div>
-                    <div class="imgbox2">
-                        <img src="~/images/radiofrecorp.jpeg" width="50px" height="30px" class="imgradiomini" alt="Alternate Text" />
-                        <p>Radiofrecuencia Corporal</p>
-                    </div>
-                    <div class="imgbox3">
-                        <img src="~/images/preso.jpg" width="50px" height="30px" class="imgpresomini" alt="Alternate Text" />
-                        <p>Dermapen </p>
-                    </div>
-                </div>
-                <p>procedimientos estéticos que ayudan a reducir la apariencia de la celulitis, mejorando la textura y firmeza de la piel...</p>
-                <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+            <div class="textbodysecondtextcorp">
+                <h1>Tratamientos Corporales</h1>
             </div>
-            <div class="boxessp3">
-                <div class="box5sv">
-                    <img src="~/images/radiofrecorp.jpeg" width="100px" height="100px" class="imgradiocorp" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Radiofrecuencia Corporal</h6>
-                        <p>tratamiento estético que estimula el colágeno, mejora la firmeza de la piel y combate la flacidez...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+            <div class="boxmain2indexpc">
+                <div class="box4indexpc">
+                    <h2>Tratamientos Anticelulitis</h2>
+                    <div class="box2anticelpc">
+                        <div class="box2anticelpc1">
+                            <div class="imgbox1pc">
+                                <img src="~/images/cavitation.jpeg" class="imgcavminipc1" alt="Alternate Text" />
+                                <h4>Cavitación</h4>
+                            </div>
+                            <div class="imgbox2pc">
+                                <img src="~/images/radiofrecorp.jpeg" class="imgcavminipc2" alt="Alternate Text" />
+                                <h4>Radiofrecuencia Corporal</h4>
+                            </div>
+                        </div>
+                        <h1 class="pluscavminipc">+</h1>
+                        <div class="box2anticelpc2">
+                            <div class="imgbox3pc">
+                                <img src="~/images/preso.jpg" class="imgcavminipc3" alt="Alternate Text" />
+                                <h4>Presoterapia</h4>
+                            </div>
+                            <div class="imgbox4pc">
+                                <img src="~/images/Vauterapia.jpg" class="imgcavminipc4" alt="Alternate Text" />
+                                <h4>Vacuterapia</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box4anticetxtpc">
+                        <h5>Anticelulitis: Los tratamientos anticelulitis combinan tecnologías como vacuterapia, cavitación, radiofrecuencia corporal y presoterapia para mejorar el aspecto de la piel y reducir volumen. La vacuterapia estimula la circulación y moviliza la grasa localizada mediante succión; la cavitación utiliza ultrasonido para romper células grasas; la radiofrecuencia reafirma la piel al estimular colágeno y elastina, y la presoterapia favorece el drenaje linfático para eliminar toxinas y líquidos retenidos. Estos procedimientos son no invasivos, indoloros y altamente efectivos cuando se aplican en conjunto. Con sesiones regulares, se logra una piel más firme, lisa y tonificada, mejorando visiblemente la celulitis y la silueta corporal....</h5>
+                        <button class="btn-theme-homepc btnanti"><a asp-controller="TratamientosCorporales" asp-action="Anticelulitis" class="btn-home-page">¿Quieres saber más?</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="boxmain3indexpc">
+                <div class="box5indexpc">
+                    <img src="~/images/radiofrecorp.jpeg" class="imgdermpc" alt="Alternate Text" />
+                    <div class="dermspainpc">
+                        <h2>Radiofrecuencia Corporal</h2>
+                        <h5>Radiofrecuencia Corporal: La radiofrecuencia corporal es un tratamiento estético no invasivo que utiliza ondas electromagnéticas para calentar las capas profundas de la piel, lo que estimula la producción de colágeno, mejora la elasticidad y favorece la eliminación de grasa localizada. Es ideal para tratar la flacidez, mejorar la firmeza de zonas como abdomen, brazos, glúteos y muslos, y reducir la apariencia de celulitis. El procedimiento es seguro, cómodo y no requiere tiempo de recuperación. Desde las primeras sesiones se nota una piel más tensa y tonificada, y los resultados se intensifican progresivamente con un tratamiento continuo....</h5>
+                        <button class="btn-theme-homepc"><a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
 
                 </div>
-                <div class="box6sv">
-                    <img src="~/images/cavitation.jpeg" width="100px" height="100px" class="imgdcavit" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Cavitación</h6>
-                        <p>Tratamiento no invasivo que utiliza ultrasonido para romper células de grasa y reducir medidas corporales...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+                <div class="box6indexpc">
+                    <img src="~/images/cavitation.jpeg" class="imgdermpc" alt="Alternate Text" />
+                    <div class="dermspainpc">
+                        <h2>Cavitación</h2>
+                        <h5>Cavitación:La cavitación es un tratamiento estético no invasivo que utiliza ultrasonido de baja frecuencia para romper las células grasas desde el interior, facilitando su eliminación natural a través del sistema linfático. Es especialmente eficaz para reducir grasa localizada en zonas como abdomen, muslos, flancos y glúteos. El procedimiento es indoloro, seguro y no requiere tiempo de recuperación. Con sesiones regulares, se logra una notable reducción de volumen, mejora en la silueta corporal y una piel más lisa. Para potenciar los resultados, se recomienda acompañar con una dieta equilibrada, hidratación y actividad física....</h5>
+                        <button class="btn-theme-homepc"><a asp-controller="TratamientosCorporales" asp-action="Cavitacion" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
                 </div>
-                <div class="box7sv">
-                    <img src="~/images/preso.jpg" width="100px" height="100px" class="imgpresoterapia" alt="Alternate Text" />
-                    <div class="dermspain">
-                        <h6>Presoterapia</h6>
-                        <p>Tratamiento que mejora la circulación y reduce la retención de líquidos mediante presión de aire controlada...</p>
-                        <button class="btn-theme-home"><a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">¿Quieres saber más?</a></button>
+                <div class="box7indexpc">
+                    <img src="~/images/preso.jpg" class="imgdermpc" alt="Alternate Text" />
+                    <div class="dermspainpc">
+                        <h2>Presoterapia</h2>
+                        <h5>Presoterapia: La presoterapia es un tratamiento estético no invasivo que utiliza presión de aire controlada a través de un traje neumático para realizar un masaje linfático profundo. Ayuda a eliminar toxinas, reducir la retención de líquidos, mejorar la circulación y aliviar la sensación de piernas cansadas. Es ideal como complemento en tratamientos reductores y anticelulitis, y también favorece la recuperación después de otros procedimientos estéticos. La sesión es relajante, segura y no requiere tiempo de recuperación. Con sesiones continuas, se nota una mejora en la textura de la piel, reducción de volumen y una sensación general de ligereza y bienestar....</h5>
+                        <button class="btn-theme-homepc"><a asp-controller="TratamientosCorporales" asp-action="Presoterapia" class="btn-home-page">¿Quieres saber más?</a></button>
                     </div>
+                
                 </div>
             </div>
         </div>

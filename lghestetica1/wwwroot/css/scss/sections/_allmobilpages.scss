@@ -1,4 +1,36 @@
-﻿
+﻿.contentmobilmain {
+    position: relative;
+    height: 100vh;
+}
+
+.imgfondo2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/fondomejorado_home_mobile.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.loggamainpage2 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1vh; 
+}
+
+.loggamainpageimg2 {
+    width: 150px; 
+    height: auto;
+    display: block;
+}
 .textbodytitlesp {
     position: absolute;
     top: 23%;
@@ -10,11 +42,8 @@
 .dermspain{
     margin-top:15px;
 }
-.mainboxsp {
-    display: flex;
-    width: 200px;
-    margin-bottom: 15px;
-}
+
+
 .mainboxradfacial {
     display: flex;
     gap: 10%;
@@ -31,13 +60,7 @@
 .antictxt {
     margin-top: 10px;
     margin-bottom: -5px;
-}
-
-.mainboxspplus {
-    margin-right: 10px;
-    margin-left: 15px;
-    margin-top: 20px;
-}
+    }
 
 .facialcontexto {
     width: 100%;
@@ -49,16 +72,16 @@
 }
 
 .box1index {
-    width: 100%;
-    height: 200px;
+    margin-left:2%;
+    margin-right:2%;
+    height: 100%;
     background-color: $theme;
     border-radius: 5%;
     display: flex;
     margin-bottom: 20px;
-
     .dermspain {
         width: 100%;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-right: 20px;
 
      
@@ -71,45 +94,43 @@
     }
 }
 .box2index {
-    width: 100%;
-    height: 250px;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
     background-color: $theme;
     border-radius: 10%;
     display: flex;
     margin-bottom: 20px;
-    
+
     .dermspain {
         width: 100%;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-right: 20px;
     }
 
     .imgderm1 {
+        margin-top: 10px;
         width: 80px;
         height: 100px;
         border-radius: 20%;
     }
 }
-.box2anticel {
-    display: flex;
-    margin-right: 20px;
-    margin-left: 20px;
-    .pluscavmini{
-        font-size:40px;
-    }
-}
+
+
 .box3index {
-    width: 100%;
-    height: 200px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    height: 100%;
     background-color: $theme;
     border-radius: 10%;
     display: flex;
     margin-bottom: 20px;
 
+
     .dermspain {
-     
         width: 100%;
-        margin-left: 50px;
+        margin-left: 20px;
         margin-right: 20px;
     }
 
@@ -122,28 +143,61 @@
 
 
 .box4index {
-    width: 100%;
-    height: 200px;
+    margin-left: 2%;
+   margin-right:2%;
+    width: 96%;
+    height: 100%;
     background-color: $theme;
     border-radius: 10%;
     display: grid;
     margin-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
+
+
 
     h6 {
         text-align: center;
     }
 
+    .box2anticel2 {
+        display: flex;
+        
+       justify-content:center;
+       gap:5%;
+        .imgantictxt{
+          
+                font-size:12px;
+                
+           
+        }
+    }
+
+    .box4anticetxt {
+      margin-left:5%;
+      margin-right:5%;
+        .btn-antic {
+            margin-left: 25%;
+        }
+    }
+
+
+
     .imgcavmini {
-        width: 50px;
-        height: 50px;
+        width: 70%;
+        height: 40%;
         border-radius: 20%;
     }
 }
+
+.imgbox3{
+    
+   
+}
+
 .box5index {
+    margin-left: 2%;
+    margin-right: 2%;
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-color: $theme;
     border-radius: 10%;
     display: flex;
@@ -151,7 +205,7 @@
 
     .dermspain {
         width: 100%;
-        margin-left: 50px;
+        margin-left: 20px;
         margin-right: 20px;
     }
 
@@ -161,9 +215,12 @@
         border-radius: 20%;
     }
 }
+
 .box6index {
+    margin-left: 2%;
+    margin-right: 2%;
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-color: $theme;
     border-radius: 10%;
     display: flex;
@@ -171,7 +228,7 @@
 
     .dermspain {
         width: 100%;
-        margin-left: 50px;
+        margin-left: 20px;
         margin-right: 20px;
     }
 
@@ -181,9 +238,12 @@
         border-radius: 20%;
     }
 }
+
 .box7index {
+    margin-left: 2%;
+    margin-right: 2%;
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-color: $theme;
     border-radius: 10%;
     display: flex;
@@ -191,7 +251,7 @@
 
     .dermspain {
         width: 100%;
-        margin-left: 50px;
+        margin-left: 20px;
         margin-right: 20px;
     }
 
@@ -200,4 +260,102 @@
         height: 100px;
         border-radius: 20%;
     }
+}
+.mainboxsp {
+    display: grid;
+
+    .mainboxsp1 {
+        display: flex;
+        gap: 30%;
+    }
+
+    .mainboxspplus {
+        margin-left: 50%;
+    }
+
+    .mainboxsp2 {
+        display: flex;
+        gap: 30%
+    }
+}
+
+.imgcavmini1{
+    width:100px;
+    height: 100px;
+    margin-left:30%;
+}
+
+.imgradiomini2 {
+    width: 100px;
+    height: 100px;
+    margin-right: 30%;
+}
+
+
+.imgpresomini3 {
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+}
+
+.imgpresomini4 {
+    width: 100px;
+    height: 100px;
+    margin-right:30%;
+}
+.boxanticelmain {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    height: 100%;
+    background-color: $theme;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    h6{
+        text-align:center;
+    }
+    }
+.box1anticelmain{
+    display:grid;
+}
+.anticelbox {
+    display: flex;
+    margin-left: 15%;
+
+    .imgbox2 {
+        margin-left:20px;
+    }
+    }
+    .anticelbox2 {
+        display: flex;
+        margin-left: 15%;
+    }
+
+    .imgcavminimain1 {
+        border-radius:10%;
+        width: 100px;
+        height: 100px;
+    }
+
+.boxbtnanticetxt {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.antiselplus{
+    text-align:center;
+}
+.pricetags{
+    h2{
+        text-align:center;
+    }
+    h4{
+        color:white;
+    }
+}
+.contactinfomobile{
+    text-decoration:none;
+}
+.maps{
+    height:300px;
 }

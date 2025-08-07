@@ -4,28 +4,36 @@
 
     <div class="content contentmobilhome">
         @await Html.PartialAsync("_HeaderTratamientosCorporal")
-        <div class="textbodysecondtext">
-            <h4>Tratamiento Anticelulitis Combinado – </h4>
-            <h5>Cavitación, Vacuterapia, Radiofrecuencia y Pressoterapia</h5>
-        </div>
+       
         <div class="mainmainbox">
-            
-            <div class="mainbox">
-
+           <div class="mainbox">
+                <div class="textbodysecondtext">
+                    <h4>Tratamiento Anticelulitis Combinado – </h4>
+                    <h5>Cavitación, Vacuterapia, Radiofrecuencia y Pressoterapia</h5>
+                </div>
                 <div class="imgcavitspain">
-                    <div class="mainboxsp">
+                <div class="mainboxsp">
+                    <div class="mainboxsp1">
                         <div class="imgbox1">
-                        <img src="~/images/cavitation.jpeg" width="100px" height="100px" class="imgcavmini" alt="Alternate Text" />
-                        <h1 class="mainboxspplus">+</h1>
+                            <img src="~/images/cavitation.jpeg" class="imgcavmini1" alt="Alternate Text" />
+                            
                         </div>
                         <div class="imgbox2">
-                        <img src="~/images/radiofrecorp.jpeg" width="100px" height="100px" class="imgradiomini" alt="Alternate Text" />
-                        <h1 class="mainboxspplus">+</h1>
-                        </div>
-                        <div class="imgbox3">
-                        <img src="~/images/preso.jpg" width="100px" height="100px" class="imgpresomini" alt="Alternate Text" />
+                            <img src="~/images/radiofrecorp.jpeg" class="imgradiomini2" alt="Alternate Text" />
+                            
                         </div>
                     </div>
+                    <h1 class="mainboxspplus">+</h1>
+                    <div class="mainboxsp2">
+                        <div class="imgbox3">
+                            <img src="~/images/preso.jpg" class="imgpresomini3" alt="Alternate Text" />
+                        </div>
+                        <div class="imgbox4">
+                            <img src="~/images/Vauterapia.jpg" class="imgpresomini4" alt="Alternate Text" />
+                        </div>
+                    </div>
+
+                </div>
                     
                 </div>
                 <h6>¿Qué es el Tratamiento Anticelulitis Combinado?</h6>
@@ -67,33 +75,47 @@
                     ⚡ Mantenimiento: Sesiones mensuales para resultados duraderos<br />
                     ⚡ Consejo: Mantente bien hidratado antes y después del tratamiento para maximizar los resultados y ayudar al drenaje de toxinas<br />
                 </p>
+            <button class="btn-theme-home btn-precios"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
             </div>
         </div>
     </div>
-    <div class="content">
+<div class="content">
         @await Html.PartialAsync("_HeaderSpanish")
         <div class="mainpagepc">
             <div class="textbodysecondtext">
-                <h3>Tratamiento Anticelulitis Combinado – Cavitación, Vacuterapia, Radiofrecuencia y Pressoterapia</h3>
+                <h1>Tratamiento Anticelulitis Combinado – Cavitación, Vacuterapia, Radiofrecuencia y Pressoterapia</h1>
             </div>
-            <div class="mainbox">
+            <div class="mainboxpc">
+            <div class="boxmain2indexpc">
+                <div class="box4indexpc2">
+                    <h2>Tratamientos Anticelulitis</h2>
+                    <div class="box2anticelpc">
+                        <div class="box2anticelpc1">
+                            <div class="imgbox1pc">
+                                <img src="~/images/cavitation.jpeg" class="imgcavminipc1" alt="Alternate Text" />
+                                <h4>Cavitación</h4>
+                            </div>
+                            <div class="imgbox2pc">
+                                <img src="~/images/radiofrecorp.jpeg" class="imgcavminipc2" alt="Alternate Text" />
+                                <h4>Radiofrecuencia Corporal</h4>
+                            </div>
+                        </div>
+                        <h1 class="pluscavminipc">+</h1>
+                        <div class="box2anticelpc2">
+                            <div class="imgbox3pc">
+                                <img src="~/images/preso.jpg" class="imgcavminipc3" alt="Alternate Text" />
+                                <h4>Presoterapia</h4>
+                            </div>
+                            <div class="imgbox4pc">
+                                <img src="~/images/Vauterapia.jpg" class="imgcavminipc4" alt="Alternate Text" />
+                                <h4>Vacuterapia</h4>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="imgcavitspain">
-                    <div class="mainboxsp">
-                        <div class="imgbox1">
-                            <img src="~/images/cavitation.jpeg" width="25%" height="25%" class="imgcavmini" alt="Alternate Text" />
-                            <h1>+</h1>
-                        </div>
-                        <div class="imgbox2">
-                            <img src="~/images/radiofrecorp.jpeg" width="25%" height="25%" class="imgradiomini" alt="Alternate Text" />
-                            <h1>+</h1>
-                        </div>
-                    </div>
-                    <div class="imgbox3">
-                        <img src="~/images/preso.jpg" width="25%" height="25%" class="imgpresomini" alt="Alternate Text" />
-                        <h1>+</h1>
-                    </div>
+                    
                 </div>
+            </div>
                 <h6>¿Qué es el Tratamiento Anticelulitis Combinado?</h6>
                 <p>
                     El Tratamiento Anticelulitis Combinado utiliza una mezcla de tecnologías avanzadas que trabajan de forma sinérgica para reducir la celulitis, mejorar la circulación, eliminar grasa localizada y tonificar la piel. Combinando Cavitación, Vacuterapia, Radiofrecuencia y Pressoterapia, este tratamiento busca combatir la piel de naranja y dejar la piel más suave, firme y rejuvenecida.
@@ -132,7 +154,9 @@
                     ⚡ Frecuencia: 1 a 2 veces por semana<br />
                     ⚡ Mantenimiento: Sesiones mensuales para resultados duraderos<br />
                     ⚡ Consejo: Mantente bien hidratado antes y después del tratamiento para maximizar los resultados y ayudar al drenaje de toxinas<br />
+                <button class="btn-theme-homepc btn-preciospc"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
                 </p>
             </div>
         </div>
+    @await Html.PartialAsync("_Footer")
     </div>

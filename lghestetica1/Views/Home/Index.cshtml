@@ -4,40 +4,54 @@
 <div class="contmob">
     <div class="homepageall">
         <div class="content contentmobilmain">
-            <div class="loggamainpage">
-                <img src="~/images/loggaliz.png" class="loggamain" alt="Logga LGH" />
-            </div>
-            <div class="imgfondo">
-                <img src="~/images/fondomejorado_home_mobile.png" class="imgfondmain" alt="Alternate Text" />
-            </div>
-            <div class="textfirtsmain">
-                <h2>Medicina Estetica</h2>
-                <h2>Aestetic Medicin</h2>
-            </div>
-            <div class="treatmentsmain">
-                <div class="facialmain">
-                    <h6>Tratamientos<br/> Faciales</h6>
-                    <img src="~/images/Aplicacion-dermapen-Recuperado.png" class="facialimgmain" alt="Alternate Text" />
+            <div class="imgfondo2">
+                <div class="loggamainpage2">
+                    <img src="~/images/loggaliz.png" class="loggamainpageimg2" alt="Logga LGH" />
                 </div>
-                <div class="corporalmain">
-                    <h6>Tratamientos <br /> Corporales</h6>
-                    <img src="~/images/cav.jpg" class="corpimgmain" alt="Alternate Text" />
+               <div class="textfirtsmain">
+                    <h2>Medicina Estetica</h2>
+                    <h2>Aestetic Medicin</h2>
+                    <h3>Tratamientos</h3>
                 </div>
-            </div>
-     
-            <div class="homepagebuttons">
-                <a class="btn-theme-h" asp-controller="Spanish" asp-action="index">Para Español</a>
-                <a class="btn-theme-h" asp-controller="English" asp-action="index">For English</a>
-                <a class="btn-theme-h" asp-controller="Swedish" asp-action="index">För Svenska</a>
+                 
+                <div class="treatmentsmain">
+                   
+                    <div class="facialmain">
+                        <img src="~/images/Aplicacion-dermapen-Recuperado.png" class="facialimgmain" alt="Alternate Text" />
+                        <h6>Faciales</h6>
+                    </div>
+                    <div class="corporalmain">
+                        <img src="~/images/cav.jpg" class="corpimgmain" alt="Alternate Text" />
+                        <h6>Corporales</h6>
+                    </div>
+                </div>
+               <div class="homepagebuttons">
+                    <a class="btn-theme-h" asp-controller="Spanish" asp-action="Index">En Español</a>
+                    <a class="btn-theme-h" asp-controller="English" asp-action="Index">For English</a>
+                    <a class="btn-theme-h" asp-controller="Swedish" asp-action="Index">För Svenska</a>
+                </div>
             </div>
         </div>
-   </div>
+    </div>
 </div>
-   <div class="content">
-       
-       <div class="mainpagepc">
-            <h1>Welcome to home page</h1>
+<!-- Redirect script for desktop -->
+<script>
+    function redirectIfDesktop() {
+        const width = window.innerWidth;
+        const path = window.location.pathname.toLowerCase();
 
-       </div>
-   </div>
+        console.log("Checking screen width:", width);
+        if (width >= 768 && !path.includes("/spanish/index")) {
+            console.log("Redirecting to /Spanish/Index");
+            window.location.href = "/Spanish/Index";
+        } else if (width < 768) {
+            console.log("Screen width < 768, no redirect.");
+        }
+    }
+
+    window.addEventListener("load", redirectIfDesktop);
+    window.addEventListener("resize", redirectIfDesktop);
+</script>
+
+
 

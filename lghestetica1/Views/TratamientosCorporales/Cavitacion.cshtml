@@ -4,13 +4,14 @@
 
     <div class="content contentmobilhome">
        @await Html.PartialAsync("_HeaderTratamientosCorporal")
-    <div class="textbodysecondtext">
-        <h4>Cavitación Ultrasónica –</h4>
-        <h5>Reducción de Grasa y Moldeo Corporal sin Cirugía</h5>
-    </div>
+   
         <div class="mainmainbox">
             
             <div class="mainbox">
+            <div class="textbodysecondtext">
+                <h4>Cavitación Ultrasónica –</h4>
+                <h5>Reducción de Grasa y Moldeo Corporal sin Cirugía</h5>
+            </div>
                <div class="imgcavitspain">
                   <img src="~/images/cavitation.jpeg" class="imgdcavitmainpic" alt="Alternate Text" />
                       <h6>¿Qué es la cavitación? </h6>
@@ -49,6 +50,7 @@
                         ⚡ Frecuencia: 1 a 2 veces por semana<br />
                         ⚡ Mantenimiento: 1 sesión mensual o según necesidad<br />
                         ⚡ Consejo: Mantente bien hidratado antes y después de cada sesión para facilitar la eliminación de grasa<br />
+                    <button class="btn-theme-home btn-precios"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
                     </p>
                </div>
             </div>
@@ -58,10 +60,10 @@
         @await Html.PartialAsync("_HeaderSpanish")
         <div class="mainpagepc">
             <div class="textbodysecondtext">
-                <h4>Cavitación Ultrasónica –</h4>
-                <h6>Reducción de Grasa y Moldeo Corporal sin Cirugía</h6>
+                <h1>Cavitación Ultrasónica –</h1>
+                <h2>Reducción de Grasa y Moldeo Corporal sin Cirugía</h2>
             </div>
-            <div class="mainbox">
+            <div class="mainboxpc">
                 <div class="imgcavitspain">
                     <img src="~/images/cavitation.jpeg" class="imgdcavitmainpic" alt="Alternate Text" />
                     <h6>¿Qué es la cavitación? </h6>
@@ -100,8 +102,10 @@
                         ⚡ Frecuencia: 1 a 2 veces por semana<br />
                         ⚡ Mantenimiento: 1 sesión mensual o según necesidad<br />
                         ⚡ Consejo: Mantente bien hidratado antes y después de cada sesión para facilitar la eliminación de grasa<br />
+                    <button class="btn-theme-homepc btn-preciospc"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
                     </p>
                 </div>
             </div>
         </div>
+    @await Html.PartialAsync("_Footer")
     </div>

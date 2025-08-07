@@ -6,6 +6,10 @@
         width: 50%;
     }
 }
+.loggamain {
+    position:absolute;
+    width: 100%;
+}
 .language-choise{
     position:absolute;
     right:0%;
@@ -21,11 +25,7 @@
     width:20%;
     
 }
-.textfirtsmain {
-    position: absolute;
-    top: 38%;
-    left: 20%;
-}
+
 .boxradfacialpc{
     margin-right:10%;
 }
@@ -33,30 +33,7 @@
     margin-top:10%;
     margin-bottom:10%;
 }
-.treatmentsmain {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    gap: 5px;
 
-    .facialmain {
-        display: grid !important;
-        h6{
-            text-align:center;
-        }
-    }
-
-    .facialimgmain {
-        width: 120px;
-        border-radius: 50%;
-    }
-
-    .corpimgmain {
-        width: 120px;
-        border-radius: 50%;
-    }
-}
 .textbodysecondtextpc {
     text-align: center;
     margin-top: 100px;
@@ -70,15 +47,9 @@
 .radiofrpch3{
     font-weight:400;
 }
-.homepagebuttons {
-    display: grid;
-    position: absolute;
-    bottom:0%;
-    left:10%;
-    
-    
-}
+
 .mainpagepc {
+    height:100%;
  .mainboxpc {
         position: static;
         width: 100%;
