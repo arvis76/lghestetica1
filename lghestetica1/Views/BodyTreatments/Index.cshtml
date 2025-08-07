@@ -1,78 +1,80 @@
 ﻿@{
     ViewData["Title"] = "LGH Body Treatments ";
 }
-
-<div class="mainmainbox">
-    <div class="mainbox">
-        <div class="textbodysecondtext">
-            <h4>Body Treatments</h4>
-        </div>
-        <div class="boxemain1corp">
-            <div class="boxmain2index">
-                <div class="boxanticelmain">
-                    <h6 class="txtmainheadantce">Anti-Cellulite Treatments</h6>
-                    <div class="box1anticelmain">
-                        <div class="anticelbox">
-                            <div class="imgbox1">
-                                <img src="~/images/cavitation.jpeg" class="imgcavminimain1" alt="Cavitation" />
-                                <p>Cavitation</p>
+<div class="content contentmobilhome">
+@await Html.PartialAsync("_HeaderBodyTreatments")
+    <div class="mainmainbox">
+        <div class="mainbox">
+            <div class="textbodysecondtext">
+                <h4>Body Treatments</h4>
+            </div>
+            <div class="boxemain1corp">
+                <div class="boxmain2index">
+                    <div class="boxanticelmain">
+                        <h6 class="txtmainheadantce">Anti-Cellulite Treatments</h6>
+                        <div class="box1anticelmain">
+                            <div class="anticelbox">
+                                <div class="imgbox1">
+                                    <img src="~/images/cavitation.jpeg" class="imgcavminimain1" alt="Cavitation" />
+                                    <p>Cavitation</p>
+                                </div>
+                                <h1 class="pluscavmini">+</h1>
+                                <div class="imgbox2">
+                                    <img src="~/images/radiofrecorp.jpeg" class="imgcavminimain1" alt="Radiofrequency" />
+                                    <p>Body Radiofrequency</p>
+                                </div>
                             </div>
-                            <h1 class="pluscavmini">+</h1>
-                            <div class="imgbox2">
-                                <img src="~/images/radiofrecorp.jpeg" class="imgcavminimain1" alt="Radiofrequency" />
-                                <p>Body Radiofrequency</p>
+                            <h1 class="antiselplus">+</h1>
+                            <div class="anticelbox2">
+                                <h1 class="pluscavmini">+</h1>
+                                <div class="imgbox3">
+                                    <img src="~/images/preso.jpg" class="imgcavminimain1" alt="Pressotherapy" />
+                                    <p>Pressotherapy</p>
+                                </div>
+                                <div class="imgbox4">
+                                    <img src="~/images/Vauterapia.jpg" class="imgcavminimain1" alt="Vacuum Therapy" />
+                                    <p>Vacuum Therapy</p>
+                                </div>
+                            </div>
+                            <div class="boxbtnanticetxt">
+                                <p>Non-invasive procedures that help reduce the appearance of cellulite, improving skin texture and firmness...</p>
+                                <button class="btn-theme-home btn-anticel">
+                                    <a asp-controller="BodyTreatments" asp-action="AntiCelluliteTreatment" class="btn-home-page">Want to know more?</a>
+                                </button>
                             </div>
                         </div>
-                        <h1 class="antiselplus">+</h1>
-                        <div class="anticelbox2">
-                            <h1 class="pluscavmini">+</h1>
-                            <div class="imgbox3">
-                                <img src="~/images/preso.jpg" class="imgcavminimain1" alt="Pressotherapy" />
-                                <p>Pressotherapy</p>
-                            </div>
-                            <div class="imgbox4">
-                                <img src="~/images/Vauterapia.jpg" class="imgcavminimain1" alt="Vacuum Therapy" />
-                                <p>Vacuum Therapy</p>
-                            </div>
-                        </div>
-                        <div class="boxbtnanticetxt">
-                            <p>Non-invasive procedures that help reduce the appearance of cellulite, improving skin texture and firmness...</p>
-                            <button class="btn-theme-home btn-anticel">
-                                <a asp-controller="TratamientosCorporales" asp-action="Anticelulitis" class="btn-home-page">Want to know more?</a>
+                    </div>
+                </div>
+                <div class="boxmain3index">
+                    <div class="box5index">
+                        <img src="~/images/radiofrecorp.jpeg" class="imgderm" alt="Body Radiofrequency" />
+                        <div class="dermspain">
+                            <h6>Body Radiofrequency</h6>
+                            <p>Non-invasive treatment that stimulates collagen, improves skin firmness, and combats sagging...</p>
+                            <button class="btn-theme-home">
+                                <a asp-controller="BodyTreatments" asp-action="RadiofrequencyBody" class="btn-home-page">Want to know more?</a>
                             </button>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="boxmain3index">
-                <div class="box5index">
-                    <img src="~/images/radiofrecorp.jpeg" class="imgderm" alt="Body Radiofrequency" />
-                    <div class="dermspain">
-                        <h6>Body Radiofrequency</h6>
-                        <p>Non-invasive treatment that stimulates collagen, improves skin firmness, and combats sagging...</p>
-                        <button class="btn-theme-home">
-                            <a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal" class="btn-home-page">Want to know more?</a>
-                        </button>
+                    <div class="box6index">
+                        <img src="~/images/cavitation.jpeg" class="imgderm" alt="Cavitation" />
+                        <div class="dermspain">
+                            <h6>Cavitation</h6>
+                            <p>Non-invasive treatment using ultrasound to break down fat cells and reduce body measurements...</p>
+                            <button class="btn-theme-home">
+                                <a asp-controller="BodyTreatments" asp-action="CavitationTreatment" class="btn-home-page">Want to know more?</a>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="box6index">
-                    <img src="~/images/cavitation.jpeg" class="imgderm" alt="Cavitation" />
-                    <div class="dermspain">
-                        <h6>Cavitation</h6>
-                        <p>Non-invasive treatment using ultrasound to break down fat cells and reduce body measurements...</p>
-                        <button class="btn-theme-home">
-                            <a asp-controller="TratamientosCorporales" asp-action="Cavitacion" class="btn-home-page">Want to know more?</a>
-                        </button>
-                    </div>
-                </div>
-                <div class="box7index">
-                    <img src="~/images/preso.jpg" class="imgderm" alt="Pressotherapy" />
-                    <div class="dermspain">
-                        <h6>Pressotherapy</h6>
-                        <p>Treatment that improves circulation and reduces fluid retention through controlled air pressure...</p>
-                        <button class="btn-theme-home">
-                            <a asp-controller="TratamientosCorporales" asp-action="Presoterapia" class="btn-home-page">Want to know more?</a>
-                        </button>
+                    <div class="box7index">
+                        <img src="~/images/preso.jpg" class="imgderm" alt="Pressotherapy" />
+                        <div class="dermspain">
+                            <h6>Pressotherapy</h6>
+                            <p>Treatment that improves circulation and reduces fluid retention through controlled air pressure...</p>
+                            <button class="btn-theme-home">
+                                <a asp-controller="BodyTreatments" asp-action="Pressotherapy" class="btn-home-page">Want to know more?</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,10 +83,10 @@
 </div>
 
 <div class="content">
-    @await Html.PartialAsync("_HeaderSpanish")
+    @await Html.PartialAsync("_HeaderEnglish")
     <div class="mainpagepc">
         <div class="textbodysecondtexten">
-            <h3>Body Treatments</h3>
+            <h1>Body Treatments</h1>
         </div>
         <div class="mainboxpc">
             <div class="boxemain1corp">
@@ -113,7 +115,7 @@
                         <div class="box4anticetxt">
                             <p>Non-invasive procedures that help reduce the appearance of cellulite, improving skin texture and firmness...</p>
                             <button class="btn-theme-home">
-                                <a asp-controller="TratamientosCorporales" asp-action="Anticelulitis" class="btn-home-page">Want to know more?</a>
+                                <a asp-controller="BodyTreatments" asp-action="AntiCelluliteTreatment" class="btn-home-page">Want to know more?</a>
                             </button>
                         </div>
                     </div>
@@ -125,7 +127,7 @@
                             <h6>Body Radiofrequency</h6>
                             <p>Non-invasive treatment that stimulates collagen, improves skin firmness, and combats sagging...</p>
                             <button class="btn-theme-home">
-                                <a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal" class="btn-home-page">Want to know more?</a>
+                                <a asp-controller="BodyTreatments" asp-action="RadiofrequencyBody" class="btn-home-page">Want to know more?</a>
                             </button>
                         </div>
                     </div>
@@ -135,7 +137,7 @@
                             <h6>Cavitation</h6>
                             <p>Non-invasive treatment using ultrasound to break down fat cells and reduce body measurements...</p>
                             <button class="btn-theme-home">
-                                <a asp-controller="TratamientosCorporales" asp-action="Cavitacion" class="btn-home-page">Want to know more?</a>
+                                <<a asp-controller="BodyTreatments" asp-action="CavitationTreatment" class="btn-home-page">Want to know more?</a>
                             </button>
                         </div>
                     </div>
@@ -145,13 +147,13 @@
                             <h6>Pressotherapy</h6>
                             <p>Treatment that improves circulation and reduces fluid retention through controlled air pressure...</p>
                             <button class="btn-theme-home">
-                                <a asp-controller="TratamientosCorporales" asp-action="Presoterapia" class="btn-home-page">Want to know more?</a>
+                                <a asp-controller="BodyTreatments" asp-action="Pressotherapy" class="btn-home-page">Want to know more?</a>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        @await Html.PartialAsync("_Footer")
-    </div>
+   </div>
 </div>
+@await Html.PartialAsync("_Footer")
