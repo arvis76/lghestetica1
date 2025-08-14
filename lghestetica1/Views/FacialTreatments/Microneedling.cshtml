@@ -1,18 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "LGH Body Treatments ";
+    ViewData["Title"] = "Dermapen Microneedling Treatment";
 }
 
-  
 <div class="content contentmobilhome">
-    @await Html.PartialAsync("_HeaderTratamientosFacial")
-
+    @await Html.PartialAsync("_HeaderFacialTreatments")
     <div class="mainmainbox">
         <div class="mainbox">
             <div class="textbodysecondtext">
                 <h4>Dermapen Microneedling Treatment</h4>
             </div>
             <div class="imgcavitspain">
-                <img src="~/images/dermapen.jpeg" class="imgdermmainpic" alt="Alternate Text" />
+                <img src="~/images/dermapen.jpeg" class="imgdermmainpic" alt="Dermapen Microneedling Treatment" />
                 <h6>What Is Dermapen? </h6>
                 <p>
                     Dermapen is a cutting-edge microneedling device designed to improve the appearance of skin imperfections by creating thousands of micro-channels in the skin. These tiny, controlled punctures stimulate the body’s natural collagen and elastin production, triggering cellular renewal and delivering visible results with minimal downtime.
@@ -20,15 +18,15 @@
                 </p>
                 <h6>What Can Dermapen Treat?</h6>
                 <p>
-                    Dermapen is incredibly versatile and can effectively improve the appearance of:
-                    ✅ Fine lines and wrinkles
-                    ✅ Acne scarring and surgical scars
-                    ✅ Stretch marks
-                    ✅ Enlarged pores
-                    ✅ Hyperpigmentation and melasma
-                    ✅ Uneven skin tone and texture
-                    ✅ Sun damage
-                    ✅ Hair loss (alopecia), when used on the scalp
+                    Dermapen is incredibly versatile and can effectively improve the appearance of:<br/>
+                    ✅ Fine lines and wrinkles<br />
+                    ✅ Acne scarring and surgical scars<br />
+                    ✅ Stretch marks<br />
+                    ✅ Enlarged pores<br />
+                    ✅ Hyperpigmentation and melasma<br />
+                    ✅ Uneven skin tone and texture<br />
+                    ✅ Sun damage<br />
+                    ✅ Hair loss (alopecia), when used on the scalp<br />
                     Whether you're looking for a youthful glow, smoother skin, or targeted scar reduction, Dermapen is a powerful, clinically proven solution.
                 </p>
                 <h6>Key Benefits of Dermapen</h6>
@@ -46,18 +44,17 @@
                     ⚡Downtime: Mild redness for 24–72 hours (similar to a light sunburn)<br />
                     ⚡Recommended Sessions: 3–6 treatments, spaced 4–6 weeks apart for optimal results<br />
                     ⚡Our expert clinicians will assess your skin, customize the treatment depth, and apply soothing serums for maximum comfort and results.<br />
-                    <button class="btn-theme-home btn-precios"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
-
+                    <button class="btn-theme-home btn-precios"><a asp-controller="English" asp-action="Prices" class="btn-home-page">Check our prices</a></button>
                 </p>
             </div>
         </div>
     </div>
 </div>
 <div class="content">
-    @await Html.PartialAsync("_HeaderSpanish")
+    @await Html.PartialAsync("_HeaderEnglish")
     <div class="mainpagepc">
         <div class="textbodysecondtext">
-            <h3>Dermapen Microneedling Treatment</h3>
+            <h1>Dermapen Microneedling Treatment</h1>
         </div>
         <div class="mainboxpc">
             <div class="imgcavitspainpc">
@@ -69,15 +66,15 @@
                 </p>
                 <h6>What Can Dermapen Treat?</h6>
                 <p>
-                    Dermapen is incredibly versatile and can effectively improve the appearance of:
-                    ✅ Fine lines and wrinkles
-                    ✅ Acne scarring and surgical scars
-                    ✅ Stretch marks
-                    ✅ Enlarged pores
-                    ✅ Hyperpigmentation and melasma
-                    ✅ Uneven skin tone and texture
-                    ✅ Sun damage
-                    ✅ Hair loss (alopecia), when used on the scalp
+                    Dermapen is incredibly versatile and can effectively improve the appearance of:<br />
+                    ✅ Fine lines and wrinkles<br />
+                    ✅ Acne scarring and surgical scars<br />
+                    ✅ Stretch marks<br />
+                    ✅ Enlarged pores<br />
+                    ✅ Hyperpigmentation and melasma<br />
+                    ✅ Uneven skin tone and texture<br />
+                    ✅ Sun damage<br />
+                    ✅ Hair loss (alopecia), when used on the scalp<br />
                     Whether you're looking for a youthful glow, smoother skin, or targeted scar reduction, Dermapen is a powerful, clinically proven solution.
                 </p>
                 <h6>Key Benefits of Dermapen</h6>
@@ -95,10 +92,10 @@
                     ⚡Downtime: Mild redness for 24–72 hours (similar to a light sunburn)<br />
                     ⚡Recommended Sessions: 3–6 treatments, spaced 4–6 weeks apart for optimal results<br />
                     ⚡Our expert clinicians will assess your skin, customize the treatment depth, and apply soothing serums for maximum comfort and results.<br />
-                    <button class="btn-theme-homepc btn-preciospc"><a asp-controller="Spanish" asp-action="Precios" class="btn-home-page">Consulta nuestros precios</a></button>
+                    <button class="btn-theme-homepc btn-preciospc"><a asp-controller="English" asp-action="Prices" class="btn-home-page">Check our prices</a></button>
                 </p>
             </div>
         </div>
     </div>
-    @await Html.PartialAsync("_Footer")
 </div>
+@await Html.PartialAsync("_Footer")

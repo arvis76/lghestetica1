@@ -1,0 +1,43 @@
+﻿.mainmainbox {
+    display: flex;
+    justify-content: center;
+
+
+    .mainbox {
+        background-color: $theme-secondary;
+        margin-top: -15%;
+        max-width: 90%;
+        border-radius: 25px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+        p {
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        h2{
+            color:white;
+        }
+        h4 {
+            margin-top: 20px;
+        }
+
+        h6 {
+            color:white;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+.indexmobmain{
+    h6{
+        margin-bottom:-20px;
+    }
+    p{
+        margin-bottom:30px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

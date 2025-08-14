@@ -4,8 +4,7 @@
 
 
 <div class="content contentmobilhome">
-    @await Html.PartialAsync("_HeaderTratamientosFacial")
-
+    @await Html.PartialAsync("_HeaderFacialTreatments")
     <div class="mainmainbox">
         <div class="mainbox">
             <div class="textbodysecondtext">
@@ -18,7 +17,7 @@
                         <h6>Dermapen</h6>
                         <p>Dermapen is a device that uses microneedles to stimulate collagen and improve the skin...</p>
                         <button class="btn-theme-home">
-                            <a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">Want to know more?</a>
+                            <a asp-controller="FacialTreatments" asp-action="Microneedling" class="btn-home-page">Want to know more?</a>
                         </button>
                     </div>
                 </div>
@@ -28,17 +27,17 @@
                         <h6>Microdermabrasion</h6>
                         <p>Diamond-tip microdermabrasion: a non-invasive facial treatment that gently exfoliates the skin, improving texture, tone, and brightness.</p>
                         <button class="btn-theme-home">
-                            <a asp-controller="TratamientosFaciales" asp-action="MicrodermoabrasionFacial" class="btn-home-page">Want to know more?</a>
+                            <a asp-controller="FacialTreatments" asp-action="MicrodermoabrasionFacial" class="btn-home-page">Want to know more?</a>
                         </button>
                     </div>
                 </div>
                 <div class="box3index">
                     <img src="~/images/Radiocila.jpg" class="imgderm" alt="Facial Radiofrequency" />
                     <div class="dermspain">
-                        <h6>Facial Radiofrequency</h6>
-                        <p>Facial radiofrequency: a non-invasive treatment that stimulates collagen, firms the skin, and reduces wrinkles...</p>
+                        <h6>Radiofrequency Facial Treatment</h6>
+                        <p>Radiofrequency Facial Treatment: a non-invasive treatment that stimulates collagen, firms the skin, and reduces wrinkles...</p>
                         <button class="btn-theme-home">
-                            <a asp-controller="TratamientosFaciales" asp-action="RadiofrecuenciaFacial" class="btn-home-page">Want to know more?</a>
+                            <a asp-controller="FacialTreatments" asp-action="RadioFrequencyFacial" class="btn-home-page">Want to know more?</a>
                         </button>
                     </div>
                 </div>
@@ -48,13 +47,11 @@
 </div>
 
 <div class="content">
-    @await Html.PartialAsync("_HeaderSpanish")
-
+    @await Html.PartialAsync("_HeaderEnglish")
     <div class="mainpagepc">
         <div class="textbodysecondtext">
-            <h3>Facial Treatments</h3>
+            <h1>Facial Treatments</h1>
         </div>
-
         <div class="mainbox">
             <div class="boxessp1">
                 <div class="box1index">
@@ -63,7 +60,7 @@
                         <h6>Dermapen</h6>
                         <p>Dermapen is a device that uses microneedles to stimulate collagen and improve the skin...</p>
                         <button class="btn-theme-home">
-                            <a asp-controller="TratamientosFaciales" asp-action="DermapenFacial" class="btn-home-page">Want to know more?</a>
+                            <a asp-controller="FacialTreatments" asp-action="Microneedling" class="btn-home-page">Want to know more?</a>
                         </button>
                     </div>
                 </div>
@@ -73,22 +70,22 @@
                         <h6>Microdermabrasion</h6>
                         <p>Diamond-tip microdermabrasion: a non-invasive facial treatment that gently exfoliates the skin, improving texture, tone, and brightness.</p>
                         <button class="btn-theme-home">
-                            <a asp-controller="TratamientosFaciales" asp-action="MicrodermoabrasionFacial" class="btn-home-page">Want to know more?</a>
+                            <a asp-controller="FacialTreatments" asp-action="MicrodermoabrasionFacial" class="btn-home-page">Want to know more?</a>
                         </button>
                     </div>
                 </div>
                 <div class="box3index">
                     <img src="~/images/Radiocila.jpg" class="imgderm" alt="Facial Radiofrequency" />
                     <div class="dermspain">
-                        <h6>Facial Radiofrequency</h6>
-                        <p>Facial radiofrequency: a non-invasive treatment that stimulates collagen, firms the skin, and reduces wrinkles...</p>
+                        <h6>Radiofrequency Facial Treatment</h6>
+                        <p>Radiofrequency Facial Treatment: a non-invasive treatment that stimulates collagen, firms the skin, and reduces wrinkles...</p>
                         <button class="btn-theme-home">
-                            <a asp-controller="TratamientosFaciales" asp-action="RadiofrecuenciaFacial" class="btn-home-page">Want to know more?</a>
+                            <a asp-controller="FacialTreatments" asp-action="RadioFrequencyFacial" class="btn-home-page">Want to know more?</a>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    @await Html.PartialAsync("_Footer")
 </div>
+@await Html.PartialAsync("_Footer")

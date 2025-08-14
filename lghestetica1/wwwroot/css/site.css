@@ -202,6 +202,46 @@ h6, .h6 {
   font-size: 18px !important;
 }
 
+.mainmainbox {
+  display: flex;
+  justify-content: center;
+}
+.mainmainbox .mainbox {
+  background-color: #a6c7e7;
+  margin-top: -15%;
+  max-width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.mainmainbox .mainbox p {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.mainmainbox .mainbox h2 {
+  color: white;
+}
+.mainmainbox .mainbox h4 {
+  margin-top: 20px;
+}
+.mainmainbox .mainbox h6 {
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.indexmobmain h6 {
+  margin-bottom: -20px;
+}
+.indexmobmain p {
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .main-content {
   padding: 50px;
 }
@@ -602,35 +642,6 @@ imgderm,
   }
 }
 
-.mainmainbox {
-  display: flex;
-  justify-content: center;
-}
-.mainmainbox .mainbox {
-  background-color: #a6c7e7;
-  margin-top: -15%;
-  max-width: 90%;
-  border-radius: 25px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.mainmainbox .mainbox p {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.mainmainbox .mainbox h4 {
-  margin-top: 20px;
-}
-.mainmainbox .mainbox h6 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .textfacialsecondtextfac {
   text-align: center;
   margin-top: 20px;
@@ -896,6 +907,10 @@ img {
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 20%;
+}
+
+.textbodysecondtext h1 {
+  color: white;
 }
 
 .box2indexpc {
@@ -1456,6 +1471,11 @@ img {
   text-align: center;
 }
 
+.pricetags {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .pricetags h2 {
   text-align: center;
 }

@@ -142,36 +142,7 @@ imgderm,
         display: none; // hide on small screens
     }
 }
-.mainmainbox {
-    display: flex;
-    justify-content: center;
 
-
-    .mainbox {
-        background-color: $theme-secondary;
-        margin-top: -15%;
-        max-width: 90%;
-        border-radius: 25px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-
-        p {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        h4{
-            margin-top:20px;
-        }
-        h6 {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-    }
-}
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
 
 
     .textfacialsecondtextfac {
