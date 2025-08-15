@@ -202,6 +202,30 @@ h6, .h6 {
   font-size: 18px !important;
 }
 
+h1 {
+  color: white;
+}
+
+.indexpcmain {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.indexpcmain h3 {
+  color: white;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+.indexpcmain h5 {
+  margin-bottom: 0;
+}
+.indexpcmain .btn-theme-homepc {
+  margin-top: 20px;
+}
+
+.indexbottompc {
+  margin-bottom: 10%;
+}
+
 .mainmainbox {
   display: flex;
   justify-content: center;
@@ -240,6 +264,10 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.indexbottommob h6 {
+  margin-bottom: 20px;
 }
 
 .main-content {
