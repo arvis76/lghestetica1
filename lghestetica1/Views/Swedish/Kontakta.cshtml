@@ -1,14 +1,13 @@
-﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
+﻿@{
+    ViewData["Title"] = "Kontakta oss";
+}
 <div class="content contentmobilhome">
     @await Html.PartialAsync("_HeaderSwedishMobile")
     <div class="textbodysecondtextprice">
         <h1>Kontakta oss</h1>
     </div>
-
     <div class="mainmainbox">
-
-        <div class="mainbox">
+       <div class="mainbox">
             <div class="contactinfomobile">
                 <h6>Phone: <a href="tel:+34666348848">+34 666348848</a></h6>
                 <h6>Email: <a href="mailto:lizethgarcia4@msn.com">lizethgarcia4@msn.com</a></h6>
@@ -20,7 +19,6 @@
                     </a>
                 </h6>
             </div>
-
             <h5>Du finner oss i Los Critsianos</h5>
             <div class="maps">
                 <iframe src="https://www.google.com/maps?q=Los+Cristianos,+Tenerife,+Spain&output=embed"
@@ -31,11 +29,8 @@
                         allowfullscreen>
                 </iframe>
             </div>
-
-
-        </div>
+       </div>
     </div>
-
 </div>
 <div class="content">
     @await Html.PartialAsync("_HeaderSwedish")
@@ -55,7 +50,6 @@
                     </a>
                 </h5>
             </div>
-
             <h3>You find us in Los Cristianos</h3>
             <div class="mapspc">
                 <iframe src="https://www.google.com/maps?q=Los+Cristianos,+Tenerife,+Spain&output=embed"
@@ -66,9 +60,7 @@
                         allowfullscreen>
                 </iframe>
             </div>
-
         </div>
-
     </div>
-   </div>
+</div>
 @await Html.PartialAsync("_Footer")

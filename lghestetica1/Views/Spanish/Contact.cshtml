@@ -1,14 +1,12 @@
-﻿
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
-    <div class="content contentmobilhome">
+﻿@{
+    ViewData["Title"] = "Precios";
+}
+<div class="content contentmobilhome">
         @await Html.PartialAsync("_HeaderSpanishMobile")
     <div class="textbodysecondtextprice">
         <h1>Contáctanos</h1>
     </div>
-          
         <div class="mainmainbox">
-         
             <div class="mainbox">
                 <div class="contactinfomobile">
                     <h6>Phone: <a href="tel:+34666348848">+34 666348848</a></h6>
@@ -21,7 +19,6 @@
                         </a>
                         </h6>
                 </div>
-
                 <h5>Estamos en Los Cristianos</h5>
                 <div class="maps">
                     <iframe src="https://www.google.com/maps?q=Los+Cristianos,+Tenerife,+Spain&output=embed"
@@ -32,45 +29,39 @@
                             allowfullscreen>
                     </iframe>
                 </div>
-              
-
-            </div>
+           </div>
         </div>
-
 </div>
-    <div class="content">
-        @await Html.PartialAsync("_HeaderSpanish")
-        <div class="mainpagepc">
+<div class="content">
+    @await Html.PartialAsync("_HeaderSpanish")
+    <div class="mainpagepc">
         <div class="textbodysecondtext">
             <h1>Contáctanos</h1>
         </div>
         <div class="mainboxpc">
-        <div class="contactinfopc">
-            <h5>Phone: <a href="tel:+34666348848">+34 666348848</a></h5>
-            <h5>Email: <a href="mailto:lizethgarcia4@msn.com">lizethgarcia4@msn.com</a></h5>
-            <h5>Address: Los Cristianos, Tenerife, Spain</h5>
-            <h5>
-                WhatsApp:
-                <a href="https://wa.me/34666348848" target="_blank" class="whatsapp-link">
-                    Chat
-                </a>
+            <div class="contactinfopc">
+                <h5>Phone: <a href="tel:+34666348848">+34 666348848</a></h5>
+                <h5>Email: <a href="mailto:lizethgarcia4@msn.com">lizethgarcia4@msn.com</a></h5>
+                <h5>Address: Los Cristianos, Tenerife, Spain</h5>
+                <h5>
+                    WhatsApp:
+                    <a href="https://wa.me/34666348848" target="_blank" class="whatsapp-link">
+                        Chat
+                    </a>
                 </h5>
-        </div>
-
+            </div>
             <h3>Estamos en Los Cristianos</h3>
-        <div class="mapspc">
-            <iframe src="https://www.google.com/maps?q=Los+Cristianos,+Tenerife,+Spain&output=embed"
+            <div class="mapspc">
+                <iframe src="https://www.google.com/maps?q=Los+Cristianos,+Tenerife,+Spain&output=embed"
                     width="100%"
                     height="100%"
                     frameborder="0"
                     style="border:0"
                     allowfullscreen>
-            </iframe>
-        </div>
-
-        </div>
-   
+                </iframe>
+            </div>
+       </div>
     </div>
-    @await Html.PartialAsync("_Footer")
- </div>
+</div>
+@await Html.PartialAsync("_Footer")
 

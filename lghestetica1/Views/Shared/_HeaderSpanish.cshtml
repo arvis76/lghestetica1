@@ -18,7 +18,7 @@
 	<div class="horizontal-menu">
 		<a asp-controller="Spanish" asp-action="Index">Home</a>
 		<div class="dropdown2">
-			<a href="#">Tratamientos Faciales</a>
+			<a asp-controller="TratamientosFaciales" asp-action="index">Tratamientos Faciales</a>
 			<div class="dropdown-content2">
 				<a asp-controller="TratamientosFaciales" asp-action="MicrodermoabrasionFacial">Microdermabrasion Facial</a>
 				<a asp-controller="TratamientosFaciales" asp-action="DermapenFacial">Dermapen</a>
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="dropdown2">
-			<a href="#">Tratamientos Corporales</a>
+			<a asp-controller="TratamientosCorporales" asp-action="index">Tratamientos Corporales</a>
 			<div class="dropdown-content2">
 				<a asp-controller="TratamientosCorporales" asp-action="Cavitacion">Cavitacion</a>
 				<a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal">Radiofrecuencia Corporal</a>

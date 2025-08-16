@@ -1,4 +1,7 @@
-﻿<div class="content contentmobilhome">
+﻿@{
+    ViewData["Title"] = "Priser";
+}
+<div class="content contentmobilhome">
     @await Html.PartialAsync("_HeaderSwedishMobile")
     <div class="textbodysecondtextprice">
         <h1>Priser</h1>
@@ -9,18 +12,12 @@
                 <h3>Ansikts- och kroppsbehandlingar<br /> (Enstaka sessioner)</h3>
                 <h4>
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Ansiktsrengöring med diamantslipning (mikrodermabrasion):45€ <br />
-
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Dermapen för ansiktet: 60€<br />
-
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Radiofrekvens för ansiktet:55€ br />
-
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Radiofrekvens för ansiktet med vitaminer:65€ <br />
-
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Pressoterapi: 15€<br />
-
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Kavitationsbehandling + radiofrekvens + pressoterapi (1 session): 50€
                 </h4>
-
                 <h3>Paket (5 eller 10 sessioner)</h3>
                 <h2>Ansiktsbehandlingar</h2>
                 <h4>
@@ -31,7 +28,7 @@
                 <h4>
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Kavitationsbehandling + radiofrekvens + pressoterapi:<br />
                     ▸ 5 sessioner:200€ <br />
-                    ▸ 10 sessioner:350€ 
+                    ▸ 10 sessioner:360€ 
                 </h4>
                 <h2>Pressoterapi</h2>
                 <h4>
@@ -54,39 +51,33 @@
             <div class="pricetags">
                 <h3>Ansikts- och kroppsbehandlingar<br /> (Enstaka sessioner)</h3>
                 <h4>
-                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Ansiktsrengöring med diamantslipning (mikrodermabrasion): <br />
-
-                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Dermapen för ansiktet: <br />
-
-                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Radiofrekvens för ansiktet: <br />
-
-                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Radiofrekvens för ansiktet med vitaminer: <br />
-
-                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Pressoterapi: <br />
-
-                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Kavitationsbehandling + radiofrekvens + pressoterapi (1 session): 
+                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Ansiktsrengöring med diamantslipning (mikrodermabrasion):45€ <br />
+                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Dermapen för ansiktet: 60€<br />
+                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Radiofrekvens för ansiktet:55€ br />
+                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Radiofrekvens för ansiktet med vitaminer:65€ <br />
+                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Pressoterapi: 15€<br />
+                    <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Kavitationsbehandling + radiofrekvens + pressoterapi (1 session): 50€
                 </h4>
-
                 <h3>Paket (5 eller 10 sessioner)</h3>
                 <h2>Ansiktsbehandlingar</h2>
                 <h4>
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Radiofrekvens för ansiktet (inkluderar medicinska vitaminer):<br />
-                    ▸ 5 sessioner: 
+                    ▸ 5 sessioner: 250€
                 </h4>
                 <h2>Kroppsbehandlingar</h2>
                 <h4>
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Kavitationsbehandling + radiofrekvens + pressoterapi:<br />
-                    ▸ 5 sessioner: <br />
-                    ▸ 10 sessioner: 
+                    ▸ 5 sessioner:200€ <br />
+                    ▸ 10 sessioner:360€
                 </h4>
                 <h2>Pressoterapi</h2>
                 <h4>
                     <i class="fas fa-star" style="color: gold; font-size: 20px;"></i> Aktiverar blodcirkulationen och det lymfatiska systemet<br />
-                    ▸ 5 sessioner: <br />
-                    ▸ 10 sessioner: 
+                    ▸ 5 sessioner:60€<br />
+                    ▸ 10 sessioner:100€
                 </h4>
             </div>
         </div>
     </div>
-    @await Html.PartialAsync("_Footer")
 </div>
+@await Html.PartialAsync("_Footer")

@@ -19,7 +19,7 @@
 	<div class="horizontal-menu">
 		<a asp-controller="Swedish" asp-action="Index">Home</a>
 		<div class="dropdown2">
-			<a href="#">Ansiktsbehandlingar</a>
+			<a asp-controller="AnsiktsBehandlingar" asp-action="index">Ansiktsbehandlingar</a>
 			<div class="dropdown-content2">
 				<a asp-controller="AnsiktsBehandlingar" asp-action="Microneedling">Microneedling</a>
 				<a asp-controller="AnsiktsBehandlingar" asp-action="Mikrodermabrasion">Microdermabrasion</a>
@@ -27,7 +27,7 @@
 			</div>
 		</div>
 		<div class="dropdown2">
-			<a href="#">Kroppsbehandlingar</a>
+			<a asp-controller="KroppsBehandlingar" asp-action="index">Kroppsbehandlingar</a>
 			<div class="dropdown-content2">
 				<a asp-controller="KroppsBehandlingar" asp-action="Cavitation">Cavitation</a>
 				<a asp-controller="KroppsBehandlingar" asp-action="Pressoterapi">Pressoterapi</a>

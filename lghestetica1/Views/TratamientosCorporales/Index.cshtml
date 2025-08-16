@@ -3,46 +3,42 @@
 }
 <div class="content contentmobilhome">
     @await Html.PartialAsync("_HeaderTratamientosCorporal")
-  
     <div class="mainmainbox">
         <div class="mainbox">
             <div class="textbodysecondtext">
                 <h4>Tratamientos Corporales</h4>
             </div>
             <div class="boxemain1corp">
-              <div class="boxmain2index">
+                <div class="boxmain2index">
                     <div class="boxanticelmain">
                         <h6 class="txtmainheadantce">Tratamientos Anticelulitis</h6>
                         <div class="box1anticelmain">
                             <div class="anticelbox">
-                            <div class="imgbox1">
+                                <div class="imgbox1">
                                     <img src="~/images/cavitation.jpeg" class="imgcavminimain1" alt="Cavitación" />
-                                <p>Cavitación</p>
-                            </div>
-                            <h1 class="pluscavmini">+</h1>
-                            <div class="imgbox2">
+                                    <p>Cavitación</p>
+                                </div>
+                                <div class="imgbox2">
                                     <img src="~/images/radiofrecorp.jpeg" class="imgcavminimain1" alt="Radiofrecuencia Corporal" />
-                                <p>Radiofrecuencia Corporal</p>
-                            </div>
+                                    <p>Radiofrecuencia Corporal</p>
+                                </div>
                             </div>
                             <h1 class="antiselplus">+</h1>
                             <div class="anticelbox2">
-                            <h1 class="pluscavmini">+</h1>
-                            <div class="imgbox3">
+                                <div class="imgbox3">
                                     <img src="~/images/preso.jpg" class="imgcavminimain1" alt="Presopterapia" />
-                                <p>Presopterapia</p>
-                            </div>
-                            <div class="imgbox4">
+                                    <p>Presopterapia</p>
+                                </div>
+                                <div class="imgbox4">
                                     <img src="~/images/Vauterapia.jpg" class="imgcavminimain1" alt="Vacuterapia" />
-                                <p>Vacuterapia</p>
+                                    <p>Vacuterapia</p>
+                                </div>
                             </div>
-                    </div>
                             <div class="boxbtnanticetxt">
                                 <p>procedimientos estéticos que ayudan a reducir la apariencia de la celulitis, mejorando la textura y firmeza de la piel...</p>
                                 <button class="btn-theme-home btn-anticel"><a asp-controller="TratamientosCorporales" asp-action="Anticelulitis" class="btn-home-page">¿Quieres saber más?</a></button>
                             </div>
                         </div>
-                      
                     </div>
                 </div>
                 <div class="boxmain3index">
@@ -53,7 +49,6 @@
                             <p>tratamiento estético que estimula el colágeno, mejora la firmeza de la piel y combate la flacidez...</p>
                             <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="RadiofrecuenciaCorporal" class="btn-home-page">¿Quieres saber más?</a></button>
                         </div>
-
                     </div>
                     <div class="box6index">
                         <img src="~/images/cavitation.jpeg" class="imgderm" alt="Alternate Text" />
@@ -71,10 +66,10 @@
                             <button class="btn-theme-home"><a asp-controller="TratamientosCorporales" asp-action="Presoterapia" class="btn-home-page">¿Quieres saber más?</a></button>
                         </div>
                     </div>
-                  </div>         
-                </div>
-  </div>
-  </div>
+                </div>         
+            </div>
+        </div>
+    </div>
 </div>
 <div class="content">
     @await Html.PartialAsync("_HeaderSpanish")
@@ -105,7 +100,6 @@
                                 <img src="~/images/preso.jpg" class="imgcavmini" alt="Dermapen " />
                                 <p>Dermapen </p>
                             </div>
-
                         </div>
                         <div class="box4anticetxt">
                             <p>procedimientos estéticos que ayudan a reducir la apariencia de la celulitis, mejorando la textura y firmeza de la piel...</p>
@@ -140,8 +134,8 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
-        </div>
+       </div>
     </div>
+</div>
 @await Html.PartialAsync("_Footer")
